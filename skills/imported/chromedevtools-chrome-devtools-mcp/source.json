@@ -1,0 +1,18 @@
+{
+  "id": "chromedevtools-chrome-devtools-mcp",
+  "reference": "ChromeDevTools/chrome-devtools-mcp/io.github.ChromeDevTools/chrome-devtools-mcp",
+  "repository": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+  "kind": "mcp",
+  "status": "reference_only",
+  "enabled": false,
+  "execution": "instructions_only",
+  "files": [
+    "README.md"
+  ],
+  "description": "# Chrome DevTools for agents\n\n[![npm chrome-devtools-mcp package](https://img.shields.io/npm/v/chrome-devtools-mcp.svg)](https://npmjs.org/package/chrome-devtools-mcp)\n\nChrome DevTools for agents (`chrome-devtools-mcp`) lets your coding agent (such as Antigravity, Claude, Cursor or Copilot)\ncontrol and inspect a live Chrome browser. It acts as a Model-Context-Protocol\n(MCP) server, giving your AI",
+  "path": "skills/imported/chromedevtools-chrome-devtools-mcp/README.md",
+  "source_url": "https://raw.githubusercontent.com/ChromeDevTools/chrome-devtools-mcp/HEAD/README.md",
+  "sha256": "059a0349daaef6bda98eae6d9384ed349ac94b8033b18be817c317a01b472024",
+  "missing_resources": [],
+  "license_file": "skills/imported/chromedevtools-chrome-devtools-mcp/UPSTREAM_LICENSE"
+}

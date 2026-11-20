@@ -1,0 +1,18 @@
+{
+  "id": "llmsresearch-paperbanana",
+  "reference": "llmsresearch/paperbanana/io.github.llmsresearch/paperbanana",
+  "repository": "https://github.com/llmsresearch/paperbanana",
+  "kind": "mcp",
+  "status": "reference_only",
+  "enabled": false,
+  "execution": "instructions_only",
+  "files": [
+    "README.md"
+  ],
+  "description": "<!-- mcp-name: io.github.llmsresearch/paperbanana -->\n<table align=\"center\" width=\"100%\" style=\"border: none; border-collapse: collapse;\">\n  <tr>\n    <td width=\"220\" align=\"left\" valign=\"middle\" style=\"border: none;\">\n      <img src=\"https://dwzhu-pku.github.io/PaperBanana/static/images/logo.jpg\" alt=\"PaperBanana Logo\" width=\"180\"/>\n    </td>\n    <td align=\"left\" valign=\"middle\" style=\"border: non",
+  "path": "skills/imported/llmsresearch-paperbanana/README.md",
+  "source_url": "https://raw.githubusercontent.com/llmsresearch/paperbanana/HEAD/README.md",
+  "sha256": "c1871ec7bc529876d47c853feedcfddc5bc3a350f8669ec3ec06762d3c3b9eb6",
+  "missing_resources": [],
+  "license_file": "skills/imported/llmsresearch-paperbanana/UPSTREAM_LICENSE"
+}

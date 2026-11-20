@@ -1,0 +1,24 @@
+{
+  "id": "matlab-matlab-use-machine-learning-apps",
+  "reference": "matlab/matlab-agentic-toolkit/skills-catalog/ai-and-statistics/matlab-use-machine-learning-apps",
+  "repository": "https://github.com/matlab/matlab-agentic-toolkit",
+  "kind": "skill",
+  "status": "imported",
+  "enabled": true,
+  "execution": "instructions_only",
+  "files": [
+    "SKILL.md",
+    "references/api-explainability.md",
+    "references/api-export-and-diagnostics.md",
+    "references/api-metrics-and-options.md",
+    "references/api-plots.md",
+    "references/api-session-and-models.md",
+    "references/skill-guidance-details.md"
+  ],
+  "description": "Use when the user wants to train, compare, or export machine learning models using Classification Learner or Regression Learner — including opening the app, loading data, training models, evaluating metrics, comparing results, visualizing plots, testing on held-out data, exploring model interpretability, and exporting trained models. Programmatic access to Classification Learner and Regression Learner apps via AppController.",
+  "path": "skills/imported/matlab-matlab-use-machine-learning-apps/SKILL.md",
+  "source_url": "https://raw.githubusercontent.com/matlab/matlab-agentic-toolkit/HEAD/skills-catalog/ai-and-statistics/matlab-use-machine-learning-apps/SKILL.md",
+  "sha256": "4cf140a6071983405110a1d71e5517fbd749752ff821638b5949d88f3bced856",
+  "missing_resources": [],
+  "license_file": "skills/imported/matlab-matlab-use-machine-learning-apps/UPSTREAM_LICENSE"
+}

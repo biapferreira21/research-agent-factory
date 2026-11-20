@@ -1,0 +1,19 @@
+{
+  "id": "jezweb-cloudflare-api",
+  "reference": "jezweb/claude-skills/plugins/cloudflare/skills/cloudflare-api",
+  "repository": "https://github.com/jezweb/claude-skills",
+  "kind": "skill",
+  "status": "imported",
+  "enabled": true,
+  "execution": "instructions_only",
+  "files": [
+    "SKILL.md",
+    "references/developer-platform-api.md"
+  ],
+  "description": "Hit the Cloudflare REST API directly for operations that wrangler and MCP can't handle well. Bulk DNS, custom hostnames, email routing, cache purge, WAF rules, redirect rules, zone settings, Worker routes, D1 cross-database queries, R2 bulk operations, KV bulk read/write, Vectorize queries, Queues, and fleet-wide resource audits. Produces curl commands or scripts. Triggers: 'cloudflare api', 'bulk dns', 'custom hostname', 'email routing', 'cache purge', 'waf rule', 'd1 query', 'r2 bucket', 'kv bulk', 'vectorize query', 'audit resources', 'fleet operation'.",
+  "path": "skills/imported/jezweb-cloudflare-api/SKILL.md",
+  "source_url": "https://raw.githubusercontent.com/jezweb/claude-skills/HEAD/plugins/cloudflare/skills/cloudflare-api/SKILL.md",
+  "sha256": "dc3d409785ee0fb5ea5c7e7619769431c19beb5b80e7a053a0e229544c2bd9de",
+  "missing_resources": [],
+  "license_file": "skills/imported/jezweb-cloudflare-api/UPSTREAM_LICENSE"
+}

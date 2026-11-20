@@ -1,0 +1,33 @@
+{
+  "id": "k-dense-ai-exploratory-data-analysis",
+  "reference": "K-Dense-AI/scientific-agent-skills/skills/exploratory-data-analysis",
+  "repository": "https://github.com/K-Dense-AI/scientific-agent-skills",
+  "kind": "skill",
+  "status": "imported",
+  "enabled": true,
+  "execution": "instructions_only",
+  "files": [
+    "SKILL.md",
+    "assets/report_template.md",
+    "references/bioinformatics_genomics_formats.md",
+    "references/chemistry_molecular_formats.md",
+    "references/general_scientific_formats.md",
+    "references/microscopy_imaging_formats.md",
+    "references/proteomics_metabolomics_formats.md",
+    "references/spectroscopy_analytical_formats.md",
+    "scripts/capability_manifest.py",
+    "scripts/distribution_sensitivity.py",
+    "scripts/eda_analyzer.py",
+    "scripts/image_inspector.py",
+    "scripts/missingness_leakage_audit.py",
+    "scripts/report_scaffold.py",
+    "scripts/sequence_inspector.py",
+    "scripts/tabular_profile.py"
+  ],
+  "description": "Perform bounded, local exploratory analysis of explicitly supported scientific files. Use for redacted CSV/TSV/JSON profiles; optional NumPy, HDF5, FASTA/FASTQ, and basic image metadata inspection; missingness/leakage audits; outlier and transformation sensitivity; and rigorous EDA report scaffolds. Other domain formats are reference-only and unknown formats fail closed.",
+  "path": "skills/imported/k-dense-ai-exploratory-data-analysis/SKILL.md",
+  "source_url": "https://raw.githubusercontent.com/K-Dense-AI/scientific-agent-skills/HEAD/skills/exploratory-data-analysis/SKILL.md",
+  "sha256": "71506b29ce46a6257332c95ac12a7c8bc3c18e35544d47fc3d870f94a82a65fe",
+  "missing_resources": [],
+  "license_file": "skills/imported/k-dense-ai-exploratory-data-analysis/UPSTREAM_LICENSE"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "brycewang-stanford-echarts-visualization-guide",
+  "reference": "brycewang-stanford/Auto-Empirical-Research-Skills/skills/43-wentorai-research-plugins/skills/analysis/dataviz/echarts-visualization-guide",
+  "repository": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills",
+  "kind": "skill",
+  "status": "imported",
+  "enabled": true,
+  "execution": "instructions_only",
+  "files": [
+    "SKILL.md"
+  ],
+  "description": "Guide to Apache ECharts for interactive research data dashboards",
+  "path": "skills/imported/brycewang-stanford-echarts-visualization-guide/SKILL.md",
+  "source_url": "https://raw.githubusercontent.com/brycewang-stanford/Auto-Empirical-Research-Skills/HEAD/skills/43-wentorai-research-plugins/skills/analysis/dataviz/echarts-visualization-guide/SKILL.md",
+  "sha256": "197596546f6420311c1ec4b0d3ce4c86fd35bafa21962e87ef6cadb0bde337bd",
+  "missing_resources": [],
+  "license_file": "skills/imported/brycewang-stanford-echarts-visualization-guide/UPSTREAM_LICENSE"
+}

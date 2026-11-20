@@ -1,0 +1,20 @@
+{
+  "id": "brycewang-stanford-eda",
+  "reference": "brycewang-stanford/Auto-Empirical-Research-Skills/skills/61-phdemotions-research-methods/skills/eda",
+  "repository": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills",
+  "kind": "skill",
+  "status": "imported",
+  "enabled": true,
+  "execution": "instructions_only",
+  "files": [
+    "SKILL.md",
+    "references/criteria.md",
+    "references/principles.md"
+  ],
+  "description": ">",
+  "path": "skills/imported/brycewang-stanford-eda/SKILL.md",
+  "source_url": "https://raw.githubusercontent.com/brycewang-stanford/Auto-Empirical-Research-Skills/HEAD/skills/61-phdemotions-research-methods/skills/eda/SKILL.md",
+  "sha256": "7af27c8f2a7638c1f346ddaa523ce006e300b6eef441b79f1f0bc2091d15a06d",
+  "missing_resources": [],
+  "license_file": "skills/imported/brycewang-stanford-eda/UPSTREAM_LICENSE"
+}

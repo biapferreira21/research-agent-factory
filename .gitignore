@@ -1,0 +1,21 @@
+# Created by venv; see https://docs.python.org/3/library/venv.html
+.venv/
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+.pytest-*/
+.test_tmp/
+.test-tmp/
+testtmp-*/
+data/
+generated_agents/
+*.egg-info/
+dist/
+build/
+.vendor/
+server*.log
+*.sqlite3
+*.zip
+.coverage
+htmlcov/

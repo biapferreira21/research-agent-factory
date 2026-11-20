@@ -1,0 +1,22 @@
+{
+  "id": "dougtrajano-arxiv-search",
+  "reference": "DougTrajano/pydantic-ai-skills/examples/skills/arxiv-search",
+  "repository": "https://github.com/DougTrajano/pydantic-ai-skills",
+  "kind": "skill",
+  "status": "imported",
+  "enabled": true,
+  "execution": "instructions_only",
+  "files": [
+    "SKILL.md",
+    "scripts/arxiv_search.py"
+  ],
+  "description": "Search arXiv preprint repository for papers in physics, mathematics, computer science, quantitative biology, and related fields.",
+  "path": "skills/imported/dougtrajano-arxiv-search/SKILL.md",
+  "source_url": "https://raw.githubusercontent.com/DougTrajano/pydantic-ai-skills/HEAD/examples/skills/arxiv-search/SKILL.md",
+  "sha256": "96561df97fdb5037db1e4ea41c68d0f0c0752bbdb68849e5f126e40a01a3914f",
+  "missing_resources": [],
+  "license_file": "skills/imported/dougtrajano-arxiv-search/UPSTREAM_LICENSE",
+  "resource_hashes": {
+    "scripts/arxiv_search.py": "8ad1822f32155dde61d8bbe8f7bad8d9ddf1e10df6e26ed7be6539c4a47d8770"
+  }
+}

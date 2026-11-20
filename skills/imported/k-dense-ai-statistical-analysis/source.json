@@ -1,0 +1,24 @@
+{
+  "id": "k-dense-ai-statistical-analysis",
+  "reference": "K-Dense-AI/scientific-agent-skills/skills/statistical-analysis",
+  "repository": "https://github.com/K-Dense-AI/scientific-agent-skills",
+  "kind": "skill",
+  "status": "imported",
+  "enabled": true,
+  "execution": "instructions_only",
+  "files": [
+    "SKILL.md",
+    "references/assumptions_and_diagnostics.md",
+    "references/bayesian_statistics.md",
+    "references/effect_sizes_and_power.md",
+    "references/reporting_standards.md",
+    "references/test_selection_guide.md",
+    "scripts/assumption_checks.py"
+  ],
+  "description": "Guided statistical analysis for research data - test selection, assumption checking, effect sizes, power analysis, Bayesian alternatives, and APA-formatted reporting. Use whenever a user wants to compare groups, test a hypothesis, analyze experimental or survey data, check statistical assumptions, compute required sample sizes, or write up results - even if they never name a specific test. Covers t-tests, ANOVA, chi-square, correlation, regression, non-parametric and Bayesian methods. For low-level model APIs, see the statsmodels and pymc skills.",
+  "path": "skills/imported/k-dense-ai-statistical-analysis/SKILL.md",
+  "source_url": "https://raw.githubusercontent.com/K-Dense-AI/scientific-agent-skills/HEAD/skills/statistical-analysis/SKILL.md",
+  "sha256": "1b1d63fd667ef454a8e0cadf32457a511883d3308dcc79c47c48bc565d9a23f7",
+  "missing_resources": [],
+  "license_file": "skills/imported/k-dense-ai-statistical-analysis/UPSTREAM_LICENSE"
+}

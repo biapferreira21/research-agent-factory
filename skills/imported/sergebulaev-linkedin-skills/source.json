@@ -1,0 +1,25 @@
+{
+  "id": "sergebulaev-linkedin-skills",
+  "reference": "sergebulaev/linkedin-skills/.codex-marketplace/linkedin-skills",
+  "repository": "https://github.com/sergebulaev/linkedin-skills",
+  "kind": "skill",
+  "status": "imported",
+  "enabled": true,
+  "execution": "instructions_only",
+  "files": [
+    "SKILL.md",
+    "references/algorithm-heuristics.md",
+    "references/founder-topics.md",
+    "references/hook-formulas.md",
+    "references/story-bank.md",
+    "references/untrusted-content.md",
+    "references/voice-rules.md",
+    "scripts/check_config.py"
+  ],
+  "description": "Plan, draft, audit, and publish LinkedIn posts and comments. Use when the user wants to write a viral LinkedIn post, draft a comment or reply on any LinkedIn post URL, audit a draft against 2026 algorithm heuristics, remove AI tells, extract hook formulas from viral posts, or plan a week of content. Powered by the Publora API for publishing. User provides post/comment URLs, skill drafts content, user approves, then publishes.",
+  "path": "skills/imported/sergebulaev-linkedin-skills/SKILL.md",
+  "source_url": "https://raw.githubusercontent.com/sergebulaev/linkedin-skills/HEAD/.codex-marketplace/linkedin-skills/SKILL.md",
+  "sha256": "ba248def9f2612a16712eb3933c4e6cc4ec13f8dfcfb31cc9e1cbec9b88eef56",
+  "missing_resources": [],
+  "license_file": "skills/imported/sergebulaev-linkedin-skills/UPSTREAM_LICENSE"
+}

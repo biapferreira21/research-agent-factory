@@ -1,0 +1,25 @@
+{
+  "id": "zsun79-write-literature-review",
+  "reference": "Zsun79/LitReviewSkill/skills/write-literature-review",
+  "repository": "https://github.com/Zsun79/LitReviewSkill",
+  "kind": "skill",
+  "status": "imported",
+  "enabled": true,
+  "execution": "instructions_only",
+  "files": [
+    "SKILL.md",
+    "references/review_writing.md",
+    "references/workflow.md",
+    "references/workflow_logging.md",
+    "scripts/build_knowledge_graph.py",
+    "scripts/lit_review_pipeline.py"
+  ],
+  "description": "Iterative literature-review workflow for a research topic. Use this skill to draft up to 10 search keywords, build a seed set from OpenAlex title-and-abstract matches, expand by backward and forward citations, screen candidates by title and abstract, repeat until no new relevant papers remain, rank the final set, inspect up to 30 full texts, build a concept-reference knowledge graph, and write a literature review grounded only in the final included references.",
+  "path": "skills/imported/zsun79-write-literature-review/SKILL.md",
+  "source_url": "https://raw.githubusercontent.com/Zsun79/LitReviewSkill/HEAD/skills/write-literature-review/SKILL.md",
+  "sha256": "4ff79cbfd14b46a968c2b76ee99a8bc9830fe92d71fbacbc8b30aa35c654c439",
+  "missing_resources": [
+    "references/ranked_references.json",
+    "references/ranked_references.md"
+  ]
+}

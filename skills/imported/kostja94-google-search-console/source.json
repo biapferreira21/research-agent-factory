@@ -1,0 +1,18 @@
+{
+  "id": "kostja94-google-search-console",
+  "reference": "kostja94/marketing-skills/skills/analytics/seo/google-search-console",
+  "repository": "https://github.com/kostja94/marketing-skills",
+  "kind": "skill",
+  "status": "imported",
+  "enabled": true,
+  "execution": "instructions_only",
+  "files": [
+    "SKILL.md"
+  ],
+  "description": "When the user wants to analyze Google Search Console data, use the GSC API, or interpret search performance. Also use when the user mentions \"GSC,\" \"Search Console,\" \"indexing report,\" \"Core Web Vitals,\" \"Enhancements,\" \"Insights report,\" \"search performance,\" \"search queries,\" \"search performance report,\" \"URL inspection,\" \"impressions,\" \"CTR,\" \"average position,\" \"index coverage,\" \"GSC data analysis,\" \"Search Console API,\" or \"searchanalytics.query.\" When the user wants to rewrite title tags (not only report on them), use title-tag. For meta description rewrites, use meta-description.",
+  "path": "skills/imported/kostja94-google-search-console/SKILL.md",
+  "source_url": "https://raw.githubusercontent.com/kostja94/marketing-skills/HEAD/skills/analytics/seo/google-search-console/SKILL.md",
+  "sha256": "0649408558f273cd32148cc4f46a2a745531b50f30867f47a052ac536d359ba7",
+  "missing_resources": [],
+  "license_file": "skills/imported/kostja94-google-search-console/UPSTREAM_LICENSE"
+}

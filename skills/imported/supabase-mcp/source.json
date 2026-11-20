@@ -1,0 +1,18 @@
+{
+  "id": "supabase-mcp",
+  "reference": "supabase/mcp/com.supabase/mcp",
+  "repository": "https://github.com/supabase/mcp",
+  "kind": "mcp",
+  "status": "reference_only",
+  "enabled": false,
+  "execution": "instructions_only",
+  "files": [
+    "README.md"
+  ],
+  "description": "# Supabase MCP Server\n\n[![MCP Registry Version](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fregistry.modelcontextprotocol.io%2Fv0.1%2Fservers%2Fcom.supabase%252Fmcp%2Fversions%2Flatest&query=%24.server.version&label=MCP%20Registry&logo=modelcontextprotocol)](https://registry.modelcontextprotocol.io/?q=com.supabase%2Fmcp)\n\n> Connect your Supabase projects to Cursor, Claude, Windsurf",
+  "path": "skills/imported/supabase-mcp/README.md",
+  "source_url": "https://raw.githubusercontent.com/supabase/mcp/HEAD/README.md",
+  "sha256": "d9e85af2bfbd2414a92a1e7ac3c35b9d5aef74b42312e4d7ec2c3bf04a80bdd2",
+  "missing_resources": [],
+  "license_file": "skills/imported/supabase-mcp/UPSTREAM_LICENSE"
+}

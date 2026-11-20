@@ -1,0 +1,33 @@
+{
+  "spec_version": "1.0",
+  "name": "agente_teste",
+  "description": "Agente simples de teste",
+  "objective": "Responder perguntas simples",
+  "inputs": [
+    "pergunta"
+  ],
+  "outputs": [
+    "resposta"
+  ],
+  "architecture": "single_agent",
+  "model": {
+    "provider": "openai",
+    "model": "gpt-5.5",
+    "temperature": 0.0
+  },
+  "tools": [],
+  "memory": {
+    "short_term_memory": true,
+    "long_term_memory": false
+  },
+  "runtime": {
+    "cli": true,
+    "api": false,
+    "streaming": false,
+    "persistance": "memory"
+  },
+  "system_prompt": "Responde de forma clara e curta.",
+  "evaluations": [],
+  "assumptions": [],
+  "risks": []
+}

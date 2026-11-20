@@ -1,0 +1,17 @@
+{
+  "id": "nicholasspisak-second-brain-ingest",
+  "reference": "NicholasSpisak/second-brain/skills/second-brain-ingest",
+  "repository": "https://github.com/NicholasSpisak/second-brain",
+  "kind": "skill",
+  "status": "imported",
+  "enabled": true,
+  "execution": "instructions_only",
+  "files": [
+    "SKILL.md"
+  ],
+  "description": ">",
+  "path": "skills/imported/nicholasspisak-second-brain-ingest/SKILL.md",
+  "source_url": "https://raw.githubusercontent.com/NicholasSpisak/second-brain/HEAD/skills/second-brain-ingest/SKILL.md",
+  "sha256": "5257b3b986ab707accda75e03c11bf9de3b3779d955f00c409f783bc564da29a",
+  "missing_resources": []
+}

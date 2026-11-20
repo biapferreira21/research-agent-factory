@@ -1,0 +1,7 @@
+{"schema_version":"1.0","servers":[
+ {"name":"factory-bm25","version":"1.0","description":"Pesquisa BM25 e leitura de documentos vinculados a um projeto","status":"approved","authentication":"none","tools":[
+  {"name":"search","capabilities":["document_search","bm25_search","rag_search"],"permissions":["project.documents.read"],"risk":"low","estimated_cost_usd":"0"},
+  {"name":"read_chunk","capabilities":["document_read","citation_lookup"],"permissions":["project.documents.read"],"risk":"low","estimated_cost_usd":"0"}]},
+ {"name":"factory-web","version":"1.0","description":"Pesquisa científica pública em arXiv, Crossref, OpenAlex e Semantic Scholar","status":"approved","authentication":"none","tools":[
+  {"name":"web_search","capabilities":["web_search","literature_search","arxiv_search","scholarly_search"],"permissions":["network.public"],"required_domains":["api.crossref.org","export.arxiv.org","api.openalex.org","api.semanticscholar.org"],"risk":"low","estimated_cost_usd":"0"}]}
+]}

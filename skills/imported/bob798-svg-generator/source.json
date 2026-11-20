@@ -1,0 +1,19 @@
+{
+  "id": "bob798-svg-generator",
+  "reference": "bob798/ai-skill-kit/creative/svg-generator",
+  "repository": "https://github.com/bob798/ai-skill-kit",
+  "kind": "skill",
+  "status": "imported",
+  "enabled": true,
+  "execution": "instructions_only",
+  "files": [
+    "SKILL.md",
+    "references/svg-brief-template.md",
+    "references/svg-types.md"
+  ],
+  "description": "Generates SVG graphics from the user's communication goal instead of jumping straight to drawing. Use this skill when the user wants to create an SVG, make a diagram, generate a cover, visualize an idea, turn text into an infographic, draw a flowchart, framework, comparison chart, quote card, social graphic, or lightweight web illustration. Trigger on requests like 做一个SVG, 画个图, 生成封面图, 可视化这个观点, make an SVG, create a diagram, generate a vector graphic, or turn this content into a visual.",
+  "path": "skills/imported/bob798-svg-generator/SKILL.md",
+  "source_url": "https://raw.githubusercontent.com/bob798/ai-skill-kit/HEAD/creative/svg-generator/SKILL.md",
+  "sha256": "30a9451c1503860b26ef2a779d4b3e9d7316e85f91ad6a26b768109cf359f48b",
+  "missing_resources": []
+}

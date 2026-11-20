@@ -1,0 +1,6 @@
+{
+  "workspace_root": "../generated_agents",
+  "budget_usd": "1.00",
+  "max_repair_attempts": 1,
+  "decision_backend": "configured"
+}

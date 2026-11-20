@@ -1,0 +1,1119 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "id": "dougtrajano-arxiv-search",
+      "reference": "DougTrajano/pydantic-ai-skills/examples/skills/arxiv-search",
+      "repository": "https://github.com/DougTrajano/pydantic-ai-skills",
+      "kind": "skill",
+      "status": "imported",
+      "enabled": true,
+      "execution": "instructions_only",
+      "files": [
+        "SKILL.md",
+        "scripts/arxiv_search.py"
+      ],
+      "description": "Search arXiv preprint repository for papers in physics, mathematics, computer science, quantitative biology, and related fields.",
+      "path": "skills/imported/dougtrajano-arxiv-search/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/DougTrajano/pydantic-ai-skills/HEAD/examples/skills/arxiv-search/SKILL.md",
+      "sha256": "96561df97fdb5037db1e4ea41c68d0f0c0752bbdb68849e5f126e40a01a3914f",
+      "missing_resources": [],
+      "license_file": "skills/imported/dougtrajano-arxiv-search/UPSTREAM_LICENSE",
+      "resource_hashes": {
+        "scripts/arxiv_search.py": "8ad1822f32155dde61d8bbe8f7bad8d9ddf1e10df6e26ed7be6539c4a47d8770"
+      }
+    },
+    {
+      "id": "zsun79-write-literature-review",
+      "reference": "Zsun79/LitReviewSkill/skills/write-literature-review",
+      "repository": "https://github.com/Zsun79/LitReviewSkill",
+      "kind": "skill",
+      "status": "imported",
+      "enabled": true,
+      "execution": "instructions_only",
+      "files": [
+        "SKILL.md",
+        "references/review_writing.md",
+        "references/workflow.md",
+        "references/workflow_logging.md",
+        "scripts/build_knowledge_graph.py",
+        "scripts/lit_review_pipeline.py"
+      ],
+      "description": "Iterative literature-review workflow for a research topic. Use this skill to draft up to 10 search keywords, build a seed set from OpenAlex title-and-abstract matches, expand by backward and forward citations, screen candidates by title and abstract, repeat until no new relevant papers remain, rank the final set, inspect up to 30 full texts, build a concept-reference knowledge graph, and write a literature review grounded only in the final included references.",
+      "path": "skills/imported/zsun79-write-literature-review/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/Zsun79/LitReviewSkill/HEAD/skills/write-literature-review/SKILL.md",
+      "sha256": "4ff79cbfd14b46a968c2b76ee99a8bc9830fe92d71fbacbc8b30aa35c654c439",
+      "missing_resources": [
+        "references/ranked_references.json",
+        "references/ranked_references.md"
+      ]
+    },
+    {
+      "id": "shiyangzheng-scholarly",
+      "reference": "ShiyangZheng/scholarly",
+      "repository": "https://github.com/ShiyangZheng/scholarly",
+      "kind": "skill",
+      "status": "imported",
+      "enabled": true,
+      "execution": "instructions_only",
+      "files": [
+        "SKILL.md",
+        "references/academic_paper_templates.md"
+      ],
+      "description": "Academic paper and thesis writing assistant - Guides users through Q&A to progressively build all sections of a research paper (Introduction, Literature Review, Methods, Results, Discussion, Conclusion). Works with any AI agent framework (OpenClaw, Claude Code, Cursor, etc.). trigger_when: 用户要写学术论文、学位论文（本科/硕士/博士）、期刊文章、研究报告；或提到「论文大纲」「文献综述」「研究方法」「论文结构」「Abstract」「Introduction」「Method」「Results」「Discussion」等关键词。",
+      "path": "skills/imported/shiyangzheng-scholarly/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/ShiyangZheng/scholarly/HEAD/SKILL.md",
+      "sha256": "39b9d45a3c76a3892f5d3f6d53a612230c2248ec02fdd4638436a73b008e81e7",
+      "missing_resources": []
+    },
+    {
+      "id": "agentscope-ai-bib-verify",
+      "reference": "agentscope-ai/OpenJudge/skills/bib-verify",
+      "repository": "https://github.com/agentscope-ai/OpenJudge",
+      "kind": "skill",
+      "status": "reference_only",
+      "enabled": false,
+      "execution": "instructions_only",
+      "files": [
+        "README.md"
+      ],
+      "description": "<div align=\"center\">\n\n<img src=\"./docs/images/logo.svg\" alt=\"Open-Judge Logo\" width=\"500\">\n\n<br/>\n\n<h3>\n  <em>Holistic Evaluation, Quality Rewards: Driving Application Excellence</em>\n</h3>\n\n<p>\n  🌟 <em>If you find OpenJudge helpful, please give us a <b>Star</b>!</em> 🌟\n</p>\n\n[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue?logo=python)](https://pypi.org/project/py-openjudge/)\n[![Py",
+      "path": "skills/imported/agentscope-ai-bib-verify/README.md",
+      "source_url": "https://raw.githubusercontent.com/agentscope-ai/OpenJudge/HEAD/README.md",
+      "sha256": "cb5f0d358c4dbd8e1cec1633081bb8a93af7d4b5ba6bc5ed815364c90389b7fe",
+      "missing_resources": [],
+      "license_file": "skills/imported/agentscope-ai-bib-verify/UPSTREAM_LICENSE"
+    },
+    {
+      "id": "k-dense-ai-peer-review",
+      "reference": "K-Dense-AI/scientific-agent-skills/skills/peer-review",
+      "repository": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "kind": "skill",
+      "status": "imported",
+      "enabled": true,
+      "execution": "instructions_only",
+      "files": [
+        "SKILL.md",
+        "assets/reporting_guidelines.json",
+        "assets/review_intake_template.json",
+        "assets/review_scaffold_template.md",
+        "assets/statistical_reproducibility_template.json",
+        "assets/study_profile_template.json",
+        "references/common_issues.md",
+        "references/ethical_review_practice.md",
+        "references/reporting_standards.md",
+        "references/security_validation.md",
+        "references/statistical_reproducibility.md",
+        "references/tool_reference.md",
+        "scripts/audit_citations.py",
+        "scripts/audit_statistics_reproducibility.py",
+        "scripts/generate_review_scaffold.py",
+        "scripts/lint_review.py",
+        "scripts/select_reporting_guidelines.py",
+        "scripts/validate_claim_evidence.py",
+        "scripts/validate_review_intake.py"
+      ],
+      "description": "Prepare evidence-bounded, constructive peer-review drafts and structured manuscript assessments. Use for authorized review of scientific manuscripts, protocols, preprints, or research proposals; reporting-guideline selection; claim–evidence checks; methods, statistics, reproducibility, ethics, figure/table, and citation critique; or revision-response planning.",
+      "path": "skills/imported/k-dense-ai-peer-review/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/K-Dense-AI/scientific-agent-skills/HEAD/skills/peer-review/SKILL.md",
+      "sha256": "3422beafc240aa7d2703e71fe16e3400269a5ea17045d8b390a30efe58c3de67",
+      "missing_resources": [],
+      "license_file": "skills/imported/k-dense-ai-peer-review/UPSTREAM_LICENSE"
+    },
+    {
+      "id": "k-dense-ai-scientific-visualization",
+      "reference": "K-Dense-AI/scientific-agent-skills/skills/scientific-visualization",
+      "repository": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "kind": "skill",
+      "status": "imported",
+      "enabled": true,
+      "execution": "instructions_only",
+      "files": [
+        "SKILL.md",
+        "assets/color_palettes.py",
+        "assets/publisher_profiles.json",
+        "references/color_palettes.md",
+        "references/journal_requirements.md",
+        "references/matplotlib_examples.md",
+        "references/publication_guidelines.md",
+        "references/sources.md",
+        "scripts/export_plan.py",
+        "scripts/figure_export.py",
+        "scripts/image_metadata.py",
+        "scripts/palette_audit.py",
+        "scripts/style_presets.py",
+        "scripts/style_preview.py"
+      ],
+      "description": "Create and audit truthful, accessible, publication-ready scientific figures with Matplotlib, Seaborn, or Plotly. Use for figure design, multi-panel layouts, uncertainty and missing-data displays, color/contrast review, image metadata validation, and journal export planning.",
+      "path": "skills/imported/k-dense-ai-scientific-visualization/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/K-Dense-AI/scientific-agent-skills/HEAD/skills/scientific-visualization/SKILL.md",
+      "sha256": "f7c7f9a2350ea02db2db55cd28921a54c74b089f6762f1b0b63a13b8f6eeec33",
+      "missing_resources": [],
+      "license_file": "skills/imported/k-dense-ai-scientific-visualization/UPSTREAM_LICENSE"
+    },
+    {
+      "id": "k-dense-ai-statistical-power",
+      "reference": "K-Dense-AI/scientific-agent-skills/skills/statistical-power",
+      "repository": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "kind": "skill",
+      "status": "imported",
+      "enabled": true,
+      "execution": "instructions_only",
+      "files": [
+        "SKILL.md",
+        "references/closed_form_recipes.md",
+        "references/effect_sizes.md",
+        "references/simulation_based_power.md",
+        "scripts/power.py",
+        "scripts/simulate_power.py"
+      ],
+      "description": "Sample-size and statistical power calculations for planning studies. Use whenever someone asks \"how many subjects/samples/replicates do I need\", wants an a priori power analysis, a minimum detectable effect (MDE), a power curve, or needs to justify a sample size for a grant, IRB protocol, or pre-registration. Covers closed-form power for t-tests, ANOVA, proportions, correlations, chi-square, and regression, plus simulation-based (Monte Carlo) power for designs with no formula — logistic/Poisson regression, mixed models, cluster-randomized trials, survival, and interactions. Use this skill even when the request only mentions an effect size, alpha, or \"80% power\" without saying \"power analysis",
+      "path": "skills/imported/k-dense-ai-statistical-power/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/K-Dense-AI/scientific-agent-skills/HEAD/skills/statistical-power/SKILL.md",
+      "sha256": "51ca6017ecaf5a6ec427d80f511063f570a983785399eedbd24c6fc4b9fd12f5",
+      "missing_resources": [],
+      "license_file": "skills/imported/k-dense-ai-statistical-power/UPSTREAM_LICENSE"
+    },
+    {
+      "id": "k-dense-ai-statistical-analysis",
+      "reference": "K-Dense-AI/scientific-agent-skills/skills/statistical-analysis",
+      "repository": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "kind": "skill",
+      "status": "imported",
+      "enabled": true,
+      "execution": "instructions_only",
+      "files": [
+        "SKILL.md",
+        "references/assumptions_and_diagnostics.md",
+        "references/bayesian_statistics.md",
+        "references/effect_sizes_and_power.md",
+        "references/reporting_standards.md",
+        "references/test_selection_guide.md",
+        "scripts/assumption_checks.py"
+      ],
+      "description": "Guided statistical analysis for research data - test selection, assumption checking, effect sizes, power analysis, Bayesian alternatives, and APA-formatted reporting. Use whenever a user wants to compare groups, test a hypothesis, analyze experimental or survey data, check statistical assumptions, compute required sample sizes, or write up results - even if they never name a specific test. Covers t-tests, ANOVA, chi-square, correlation, regression, non-parametric and Bayesian methods. For low-level model APIs, see the statsmodels and pymc skills.",
+      "path": "skills/imported/k-dense-ai-statistical-analysis/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/K-Dense-AI/scientific-agent-skills/HEAD/skills/statistical-analysis/SKILL.md",
+      "sha256": "1b1d63fd667ef454a8e0cadf32457a511883d3308dcc79c47c48bc565d9a23f7",
+      "missing_resources": [],
+      "license_file": "skills/imported/k-dense-ai-statistical-analysis/UPSTREAM_LICENSE"
+    },
+    {
+      "id": "k-dense-ai-exploratory-data-analysis",
+      "reference": "K-Dense-AI/scientific-agent-skills/skills/exploratory-data-analysis",
+      "repository": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "kind": "skill",
+      "status": "imported",
+      "enabled": true,
+      "execution": "instructions_only",
+      "files": [
+        "SKILL.md",
+        "assets/report_template.md",
+        "references/bioinformatics_genomics_formats.md",
+        "references/chemistry_molecular_formats.md",
+        "references/general_scientific_formats.md",
+        "references/microscopy_imaging_formats.md",
+        "references/proteomics_metabolomics_formats.md",
+        "references/spectroscopy_analytical_formats.md",
+        "scripts/capability_manifest.py",
+        "scripts/distribution_sensitivity.py",
+        "scripts/eda_analyzer.py",
+        "scripts/image_inspector.py",
+        "scripts/missingness_leakage_audit.py",
+        "scripts/report_scaffold.py",
+        "scripts/sequence_inspector.py",
+        "scripts/tabular_profile.py"
+      ],
+      "description": "Perform bounded, local exploratory analysis of explicitly supported scientific files. Use for redacted CSV/TSV/JSON profiles; optional NumPy, HDF5, FASTA/FASTQ, and basic image metadata inspection; missingness/leakage audits; outlier and transformation sensitivity; and rigorous EDA report scaffolds. Other domain formats are reference-only and unknown formats fail closed.",
+      "path": "skills/imported/k-dense-ai-exploratory-data-analysis/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/K-Dense-AI/scientific-agent-skills/HEAD/skills/exploratory-data-analysis/SKILL.md",
+      "sha256": "71506b29ce46a6257332c95ac12a7c8bc3c18e35544d47fc3d870f94a82a65fe",
+      "missing_resources": [],
+      "license_file": "skills/imported/k-dense-ai-exploratory-data-analysis/UPSTREAM_LICENSE"
+    },
+    {
+      "id": "brycewang-stanford-d3-visualization-guide",
+      "reference": "brycewang-stanford/Auto-Empirical-Research-Skills/skills/43-wentorai-research-plugins/skills/analysis/dataviz/d3-visualization-guide",
+      "repository": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills",
+      "kind": "skill",
+      "status": "imported",
+      "enabled": true,
+      "execution": "instructions_only",
+      "files": [
+        "SKILL.md"
+      ],
+      "description": "Guide to D3.js for building custom interactive data visualizations",
+      "path": "skills/imported/brycewang-stanford-d3-visualization-guide/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/brycewang-stanford/Auto-Empirical-Research-Skills/HEAD/skills/43-wentorai-research-plugins/skills/analysis/dataviz/d3-visualization-guide/SKILL.md",
+      "sha256": "520a5d0163a6311073a989887d21bd1cad6623d2913d09c1e480a03a99eaa8d0",
+      "missing_resources": [],
+      "license_file": "skills/imported/brycewang-stanford-d3-visualization-guide/UPSTREAM_LICENSE"
+    },
+    {
+      "id": "brycewang-stanford-echarts-visualization-guide",
+      "reference": "brycewang-stanford/Auto-Empirical-Research-Skills/skills/43-wentorai-research-plugins/skills/analysis/dataviz/echarts-visualization-guide",
+      "repository": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills",
+      "kind": "skill",
+      "status": "imported",
+      "enabled": true,
+      "execution": "instructions_only",
+      "files": [
+        "SKILL.md"
+      ],
+      "description": "Guide to Apache ECharts for interactive research data dashboards",
+      "path": "skills/imported/brycewang-stanford-echarts-visualization-guide/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/brycewang-stanford/Auto-Empirical-Research-Skills/HEAD/skills/43-wentorai-research-plugins/skills/analysis/dataviz/echarts-visualization-guide/SKILL.md",
+      "sha256": "197596546f6420311c1ec4b0d3ce4c86fd35bafa21962e87ef6cadb0bde337bd",
+      "missing_resources": [],
+      "license_file": "skills/imported/brycewang-stanford-echarts-visualization-guide/UPSTREAM_LICENSE"
+    },
+    {
+      "id": "foryourhealth111-pixel-statistical-analysis",
+      "reference": "foryourhealth111-pixel/Vibe-Skills/bundled/skills/statistical-analysis",
+      "repository": "https://github.com/foryourhealth111-pixel/Vibe-Skills",
+      "kind": "skill",
+      "status": "imported",
+      "enabled": true,
+      "execution": "instructions_only",
+      "files": [
+        "SKILL.md",
+        "references/assumptions_and_diagnostics.md",
+        "references/bayesian_statistics.md",
+        "references/effect_sizes_and_power.md",
+        "references/reporting_standards.md",
+        "references/test_selection_guide.md",
+        "scripts/assumption_checks.py"
+      ],
+      "description": "Statistical analysis toolkit. Hypothesis tests (t-test, ANOVA, chi-square), regression, correlation, Bayesian stats, power analysis, assumption checks, APA reporting, for academic research.",
+      "path": "skills/imported/foryourhealth111-pixel-statistical-analysis/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/foryourhealth111-pixel/Vibe-Skills/HEAD/bundled/skills/statistical-analysis/SKILL.md",
+      "sha256": "d285531413cef3fafcf3025fe6cdb1d6e8fe54a62468c7f7f29522e869d5157f",
+      "missing_resources": [],
+      "license_file": "skills/imported/foryourhealth111-pixel-statistical-analysis/UPSTREAM_LICENSE"
+    },
+    {
+      "id": "jeremylongshore-cohort-analysis-creator",
+      "reference": "jeremylongshore/claude-code-plugins-plus-skills/skills/12-data-analytics/cohort-analysis-creator",
+      "repository": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills",
+      "kind": "skill",
+      "status": "imported",
+      "enabled": true,
+      "execution": "instructions_only",
+      "files": [
+        "SKILL.md"
+      ],
+      "description": "Create cohort analysis creator operations. Auto-activating skill for",
+      "path": "skills/imported/jeremylongshore-cohort-analysis-creator/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/jeremylongshore/claude-code-plugins-plus-skills/HEAD/skills/12-data-analytics/cohort-analysis-creator/SKILL.md",
+      "sha256": "f86d25bca0a9f7564615abedd972bf20b8fc426419f8ac21968eba6c48afea46",
+      "missing_resources": [],
+      "license_file": "skills/imported/jeremylongshore-cohort-analysis-creator/UPSTREAM_LICENSE"
+    },
+    {
+      "id": "prat011-xlsx",
+      "reference": "Prat011/awesome-llm-skills/document-skills/xlsx",
+      "repository": "https://github.com/Prat011/awesome-llm-skills",
+      "kind": "skill",
+      "status": "imported",
+      "enabled": true,
+      "execution": "instructions_only",
+      "files": [
+        "SKILL.md"
+      ],
+      "description": "Comprehensive spreadsheet creation, editing, and analysis with support for formulas, formatting, data analysis, and visualization. When Claude needs to work with spreadsheets (.xlsx, .xlsm, .csv, .tsv, etc) for: (1) Creating new spreadsheets with formulas and formatting, (2) Reading or analyzing data, (3) Modify existing spreadsheets while preserving formulas, (4) Data analysis and visualization in spreadsheets, or (5) Recalculating formulas",
+      "path": "skills/imported/prat011-xlsx/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/Prat011/awesome-llm-skills/HEAD/document-skills/xlsx/SKILL.md",
+      "sha256": "020ccdb5932257b66c638ec1157ea248d57fa52c8c01f1f68b559b5970c7df35",
+      "missing_resources": []
+    },
+    {
+      "id": "matlab-matlab-symbolic-math",
+      "reference": "matlab/agent-skills-playground/skills/matlab-symbolic-math",
+      "repository": "https://github.com/matlab/agent-skills-playground",
+      "kind": "skill",
+      "status": "imported",
+      "enabled": true,
+      "execution": "instructions_only",
+      "files": [
+        "SKILL.md",
+        "references/control-systems.md",
+        "references/matlabFunction-patterns.md",
+        "references/ode-solving.md",
+        "references/plotting-and-display.md",
+        "references/simplification-and-polynomials.md"
+      ],
+      "description": "Generate correct MATLAB code using the Symbolic Math Toolbox. Use when the user asks for symbolic computations, analytical solutions, symbolic differentiation/integration, equation solving, or converting symbolic results to numeric MATLAB functions. Also use when converting differential equations to transfer functions or state-space form.",
+      "path": "skills/imported/matlab-matlab-symbolic-math/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/matlab/agent-skills-playground/HEAD/skills/matlab-symbolic-math/SKILL.md",
+      "sha256": "900e379756e831d435193a3c44529f8f1656b250b75c1046d7b8fc4aa77e7694",
+      "missing_resources": [],
+      "license_file": "skills/imported/matlab-matlab-symbolic-math/UPSTREAM_LICENSE"
+    },
+    {
+      "id": "ecnu-icalk-math-practice-game",
+      "reference": "ECNU-ICALK/AutoSkill/SkillBank/ConvSkill/english_gpt3.5_8_GLM4.7/math-practice-game",
+      "repository": "https://github.com/ECNU-ICALK/AutoSkill",
+      "kind": "skill",
+      "status": "imported",
+      "enabled": true,
+      "execution": "instructions_only",
+      "files": [
+        "SKILL.md"
+      ],
+      "description": "Generates random math problems with 2 or 3 numbers and validates user answers by explicitly stating if they are correct or incorrect.",
+      "path": "skills/imported/ecnu-icalk-math-practice-game/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/ECNU-ICALK/AutoSkill/HEAD/SkillBank/ConvSkill/english_gpt3.5_8_GLM4.7/math-practice-game/SKILL.md",
+      "sha256": "e82f24798118710eb231d7004231efddf344b44f9982bef5b1e3441f11de40fb",
+      "missing_resources": []
+    },
+    {
+      "id": "findscripter-math-proof-writer",
+      "reference": "findscripter/everything-skills/09-verticals/math-proof-writer",
+      "repository": "https://github.com/findscripter/everything-skills",
+      "kind": "skill",
+      "status": "imported",
+      "enabled": true,
+      "execution": "instructions_only",
+      "files": [
+        "SKILL.md"
+      ],
+      "description": "当需要为定理/引理/命题撰写、修复或形式化严谨的数学证明并产出可编译 LaTeX 时使用；做主张提取→文献定理匹配→策略选择→逐步推导→LaTeX 排版的端到端证明，产出可直接插入论文的证明代码；不适用于纯数值计算、绘图或非形式化的直觉说明。触发词：数学证明、formal proof、prove、theorem、lemma、proposition、推导、理论分析、LaTeX 数学、证明策略",
+      "path": "skills/imported/findscripter-math-proof-writer/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/findscripter/everything-skills/HEAD/09-verticals/math-proof-writer/SKILL.md",
+      "sha256": "78681ffc3c2700636a0a4eb611dd05a4d7ad9740a8002d0217e7ed65995d1609",
+      "missing_resources": [],
+      "license_file": "skills/imported/findscripter-math-proof-writer/UPSTREAM_LICENSE"
+    },
+    {
+      "id": "brycewang-stanford-iv-regression-guide",
+      "reference": "brycewang-stanford/Auto-Empirical-Research-Skills/skills/43-wentorai-research-plugins/skills/analysis/econometrics/iv-regression-guide",
+      "repository": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills",
+      "kind": "skill",
+      "status": "imported",
+      "enabled": true,
+      "execution": "instructions_only",
+      "files": [
+        "SKILL.md"
+      ],
+      "description": "Apply instrumental variables, 2SLS, and address endogeneity issues",
+      "path": "skills/imported/brycewang-stanford-iv-regression-guide/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/brycewang-stanford/Auto-Empirical-Research-Skills/HEAD/skills/43-wentorai-research-plugins/skills/analysis/econometrics/iv-regression-guide/SKILL.md",
+      "sha256": "3a2d8839e02918e9d53d900d08f2b5436cce9632594a415cc9de67d320cd7eff",
+      "missing_resources": [],
+      "license_file": "skills/imported/brycewang-stanford-iv-regression-guide/UPSTREAM_LICENSE"
+    },
+    {
+      "id": "brycewang-stanford-panel-data-analyst",
+      "reference": "brycewang-stanford/Auto-Empirical-Research-Skills/skills/43-wentorai-research-plugins/skills/analysis/econometrics/panel-data-analyst",
+      "repository": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills",
+      "kind": "skill",
+      "status": "imported",
+      "enabled": true,
+      "execution": "instructions_only",
+      "files": [
+        "SKILL.md"
+      ],
+      "description": "Expert panel data regression analysis with fixed effects and GMM",
+      "path": "skills/imported/brycewang-stanford-panel-data-analyst/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/brycewang-stanford/Auto-Empirical-Research-Skills/HEAD/skills/43-wentorai-research-plugins/skills/analysis/econometrics/panel-data-analyst/SKILL.md",
+      "sha256": "8574f67d0ab910f1b42fcde507f879f497d67c10ca998338310d2c4df6f8151d",
+      "missing_resources": [],
+      "license_file": "skills/imported/brycewang-stanford-panel-data-analyst/UPSTREAM_LICENSE"
+    },
+    {
+      "id": "brycewang-stanford-topology-data-analysis",
+      "reference": "brycewang-stanford/Auto-Empirical-Research-Skills/skills/43-wentorai-research-plugins/skills/domains/math/topology-data-analysis",
+      "repository": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills",
+      "kind": "skill",
+      "status": "imported",
+      "enabled": true,
+      "execution": "instructions_only",
+      "files": [
+        "SKILL.md"
+      ],
+      "description": "Topological data analysis: persistent homology, Mapper, and TDA tools",
+      "path": "skills/imported/brycewang-stanford-topology-data-analysis/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/brycewang-stanford/Auto-Empirical-Research-Skills/HEAD/skills/43-wentorai-research-plugins/skills/domains/math/topology-data-analysis/SKILL.md",
+      "sha256": "0a8f6645f8650dcbd8e9464fbb895468982d30ee6c228a9cb9ee2a88d036edbe",
+      "missing_resources": [],
+      "license_file": "skills/imported/brycewang-stanford-topology-data-analysis/UPSTREAM_LICENSE"
+    },
+    {
+      "id": "brycewang-stanford-ols-regression",
+      "reference": "brycewang-stanford/Auto-Empirical-Research-Skills/skills/67-econfin-workflow-toolkit/ols-regression",
+      "repository": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills",
+      "kind": "skill",
+      "status": "imported",
+      "enabled": true,
+      "execution": "instructions_only",
+      "files": [
+        "SKILL.md",
+        "references/ols-reference.md"
+      ],
+      "description": "|",
+      "path": "skills/imported/brycewang-stanford-ols-regression/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/brycewang-stanford/Auto-Empirical-Research-Skills/HEAD/skills/67-econfin-workflow-toolkit/ols-regression/SKILL.md",
+      "sha256": "de93db3832c1c5bd09507fcacdd1aecfeda5b4a950897dd4bfaeb4ac5f474381",
+      "missing_resources": [],
+      "license_file": "skills/imported/brycewang-stanford-ols-regression/UPSTREAM_LICENSE"
+    },
+    {
+      "id": "brycewang-stanford-eda",
+      "reference": "brycewang-stanford/Auto-Empirical-Research-Skills/skills/61-phdemotions-research-methods/skills/eda",
+      "repository": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills",
+      "kind": "skill",
+      "status": "imported",
+      "enabled": true,
+      "execution": "instructions_only",
+      "files": [
+        "SKILL.md",
+        "references/criteria.md",
+        "references/principles.md"
+      ],
+      "description": ">",
+      "path": "skills/imported/brycewang-stanford-eda/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/brycewang-stanford/Auto-Empirical-Research-Skills/HEAD/skills/61-phdemotions-research-methods/skills/eda/SKILL.md",
+      "sha256": "7af27c8f2a7638c1f346ddaa523ce006e300b6eef441b79f1f0bc2091d15a06d",
+      "missing_resources": [],
+      "license_file": "skills/imported/brycewang-stanford-eda/UPSTREAM_LICENSE"
+    },
+    {
+      "id": "brycewang-stanford-pdf-math-translate-guide",
+      "reference": "brycewang-stanford/Auto-Empirical-Research-Skills/skills/43-wentorai-research-plugins/skills/tools/ocr-translate/pdf-math-translate-guide",
+      "repository": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills",
+      "kind": "skill",
+      "status": "imported",
+      "enabled": true,
+      "execution": "instructions_only",
+      "files": [
+        "SKILL.md"
+      ],
+      "description": "Translate scientific PDFs with preserved math formatting via PDFMathTranslate",
+      "path": "skills/imported/brycewang-stanford-pdf-math-translate-guide/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/brycewang-stanford/Auto-Empirical-Research-Skills/HEAD/skills/43-wentorai-research-plugins/skills/tools/ocr-translate/pdf-math-translate-guide/SKILL.md",
+      "sha256": "9a9b206e48c43536c257ea1c132530d22432c2fa425561e3cea1d4fcecc91b91",
+      "missing_resources": [],
+      "license_file": "skills/imported/brycewang-stanford-pdf-math-translate-guide/UPSTREAM_LICENSE"
+    },
+    {
+      "id": "x-rayluan-math-tutor",
+      "reference": "X-RayLuan/awesome-ceo-stack/ceo-skill/Openclaw-Study-Coach/.claude/skills/math-tutor",
+      "repository": "https://github.com/X-RayLuan/awesome-ceo-stack",
+      "kind": "skill",
+      "status": "imported",
+      "enabled": true,
+      "execution": "instructions_only",
+      "files": [
+        "SKILL.md"
+      ],
+      "description": "数学全场景辅导(K-12)。K-3 口算 + 应用题启蒙;4-6 应用题 + 分数 + 小数 + 几何;7-9 代数 + 方程 + 函数 + 几何证明 + 概率;10-12 函数 + 解析几何 + 导数 + 概率统计 + 综合压轴。计算题走 calculation-method 5 步法。1-9 年级一次只给一道,10-12 可以一次给一组。当孩子或家长发来数学题、说\"数学不会\"、或题目含数字/方程/图形时使用。",
+      "path": "skills/imported/x-rayluan-math-tutor/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/X-RayLuan/awesome-ceo-stack/HEAD/ceo-skill/Openclaw-Study-Coach/.claude/skills/math-tutor/SKILL.md",
+      "sha256": "8dba1c716c5bbbfabfadef2a692e3c43fdfffe7bec0e1738a51cc02b98af7695",
+      "missing_resources": []
+    },
+    {
+      "id": "ecnu-icalk-simple-math-proof-explanation-with-custom-terminology",
+      "reference": "ECNU-ICALK/AutoSkill/SkillBank/ConvSkill/english_gpt3.5_8_GLM4.7/simple-math-proof-explanation-with-custom-terminology",
+      "repository": "https://github.com/ECNU-ICALK/AutoSkill",
+      "kind": "skill",
+      "status": "imported",
+      "enabled": true,
+      "execution": "instructions_only",
+      "files": [
+        "SKILL.md"
+      ],
+      "description": "Explain mathematical proofs regarding primes and irrationality using simple language, custom terminology ('whole-divisible'), and specific notation (Unicode superscript ²), while avoiding complex factorization.",
+      "path": "skills/imported/ecnu-icalk-simple-math-proof-explanation-with-custom-terminology/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/ECNU-ICALK/AutoSkill/HEAD/SkillBank/ConvSkill/english_gpt3.5_8_GLM4.7/simple-math-proof-explanation-with-custom-terminology/SKILL.md",
+      "sha256": "0a75e68489918efe1a0928580e31e915b7394a137563400878c3140e2744c512",
+      "missing_resources": []
+    },
+    {
+      "id": "foryourhealth111-pixel-evaluating-machine-learning-models",
+      "reference": "foryourhealth111-pixel/Vibe-Skills/bundled/skills/evaluating-machine-learning-models",
+      "repository": "https://github.com/foryourhealth111-pixel/Vibe-Skills",
+      "kind": "skill",
+      "status": "imported",
+      "enabled": true,
+      "execution": "instructions_only",
+      "files": [
+        "SKILL.md"
+      ],
+      "description": "|",
+      "path": "skills/imported/foryourhealth111-pixel-evaluating-machine-learning-models/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/foryourhealth111-pixel/Vibe-Skills/HEAD/bundled/skills/evaluating-machine-learning-models/SKILL.md",
+      "sha256": "29dd1c57e2ae537f01912b5a1f24c4509b98bb84f800ee49136f6da63f06f2f1",
+      "missing_resources": [],
+      "license_file": "skills/imported/foryourhealth111-pixel-evaluating-machine-learning-models/UPSTREAM_LICENSE"
+    },
+    {
+      "id": "matlab-matlab-use-machine-learning-apps",
+      "reference": "matlab/matlab-agentic-toolkit/skills-catalog/ai-and-statistics/matlab-use-machine-learning-apps",
+      "repository": "https://github.com/matlab/matlab-agentic-toolkit",
+      "kind": "skill",
+      "status": "imported",
+      "enabled": true,
+      "execution": "instructions_only",
+      "files": [
+        "SKILL.md",
+        "references/api-explainability.md",
+        "references/api-export-and-diagnostics.md",
+        "references/api-metrics-and-options.md",
+        "references/api-plots.md",
+        "references/api-session-and-models.md",
+        "references/skill-guidance-details.md"
+      ],
+      "description": "Use when the user wants to train, compare, or export machine learning models using Classification Learner or Regression Learner — including opening the app, loading data, training models, evaluating metrics, comparing results, visualizing plots, testing on held-out data, exploring model interpretability, and exporting trained models. Programmatic access to Classification Learner and Regression Learner apps via AppController.",
+      "path": "skills/imported/matlab-matlab-use-machine-learning-apps/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/matlab/matlab-agentic-toolkit/HEAD/skills-catalog/ai-and-statistics/matlab-use-machine-learning-apps/SKILL.md",
+      "sha256": "4cf140a6071983405110a1d71e5517fbd749752ff821638b5949d88f3bced856",
+      "missing_resources": [],
+      "license_file": "skills/imported/matlab-matlab-use-machine-learning-apps/UPSTREAM_LICENSE"
+    },
+    {
+      "id": "jaechang-hits-scikit-learn-machine-learning",
+      "reference": "jaechang-hits/SciAgent-Skills/skills/scientific-computing/scikit-learn-machine-learning",
+      "repository": "https://github.com/jaechang-hits/SciAgent-Skills",
+      "kind": "skill",
+      "status": "imported",
+      "enabled": true,
+      "execution": "instructions_only",
+      "files": [
+        "SKILL.md"
+      ],
+      "description": "Classical ML in Python: classification, regression, clustering, dim reduction, evaluation, tuning, preprocessing pipelines. Linear models, tree ensembles, SVMs, K-Means, PCA, t-SNE. Use PyTorch/TF for deep learning; XGBoost/LightGBM for scale.",
+      "path": "skills/imported/jaechang-hits-scikit-learn-machine-learning/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/jaechang-hits/SciAgent-Skills/HEAD/skills/scientific-computing/scikit-learn-machine-learning/SKILL.md",
+      "sha256": "784f21f0b13ddc7182eff322129e63ef4615e0210426fba885b7a4442ed50705",
+      "missing_resources": [],
+      "license_file": "skills/imported/jaechang-hits-scikit-learn-machine-learning/UPSTREAM_LICENSE"
+    },
+    {
+      "id": "charlieviettq-machine-learning-engineer",
+      "reference": "charlieviettq/awesome-agent-skill/.cursor/skills/voltagent/data-ai/machine-learning-engineer",
+      "repository": "https://github.com/charlieviettq/awesome-agent-skill",
+      "kind": "skill",
+      "status": "imported",
+      "enabled": true,
+      "execution": "instructions_only",
+      "files": [
+        "SKILL.md"
+      ],
+      "description": "Use this agent when you need to deploy, optimize, or serve machine learning models at scale in production environments.",
+      "path": "skills/imported/charlieviettq-machine-learning-engineer/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/charlieviettq/awesome-agent-skill/HEAD/.cursor/skills/voltagent/data-ai/machine-learning-engineer/SKILL.md",
+      "sha256": "e9a858aebc5e58e16a9a47ed45a03ba764a16aebd9fa8df3a1ecbc4f98638792",
+      "missing_resources": [],
+      "license_file": "skills/imported/charlieviettq-machine-learning-engineer/UPSTREAM_LICENSE"
+    },
+    {
+      "id": "jeremylongshore-engineering-features-for-machine-learning",
+      "reference": "jeremylongshore/claude-code-plugins-plus-skills/skills/.curated/engineering-features-for-machine-learning",
+      "repository": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills",
+      "kind": "skill",
+      "status": "imported",
+      "enabled": true,
+      "execution": "instructions_only",
+      "files": [
+        "SKILL.md"
+      ],
+      "description": "Execute create, select, and transform features to improve machine learning",
+      "path": "skills/imported/jeremylongshore-engineering-features-for-machine-learning/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/jeremylongshore/claude-code-plugins-plus-skills/HEAD/skills/.curated/engineering-features-for-machine-learning/SKILL.md",
+      "sha256": "5185ec3aeeb83001d77974c0b0536ec6b64f0e8744cc9ef2e2cf33b5e92ab0ac",
+      "missing_resources": [],
+      "license_file": "skills/imported/jeremylongshore-engineering-features-for-machine-learning/UPSTREAM_LICENSE"
+    },
+    {
+      "id": "deveshpunjabi-3d-website-architect",
+      "reference": "deveshpunjabi/3d-website-skill/skills/3d-website-architect",
+      "repository": "https://github.com/deveshpunjabi/3d-website-skill",
+      "kind": "skill",
+      "status": "imported",
+      "enabled": true,
+      "execution": "instructions_only",
+      "files": [
+        "SKILL.md",
+        "references/3d-integration.md",
+        "references/animation-patterns.md",
+        "references/design-systems.md"
+      ],
+      "description": ">",
+      "path": "skills/imported/deveshpunjabi-3d-website-architect/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/deveshpunjabi/3d-website-skill/HEAD/skills/3d-website-architect/SKILL.md",
+      "sha256": "687be118d7e41dd2a4df53e7c5c01081c86312045954538322010c34ed1b997f",
+      "missing_resources": [],
+      "license_file": "skills/imported/deveshpunjabi-3d-website-architect/UPSTREAM_LICENSE"
+    },
+    {
+      "id": "ntaffzii-obsidian-canvas",
+      "reference": "ntaffzii/Skill-Agents/skills/obsidian/obsidian-canvas",
+      "repository": "https://github.com/ntaffzii/Skill-Agents",
+      "kind": "skill",
+      "status": "imported",
+      "enabled": true,
+      "execution": "instructions_only",
+      "files": [
+        "SKILL.md"
+      ],
+      "description": "Create and edit Obsidian JSON Canvas .canvas files with nodes, edges, groups, colors, links, files, and spatial layouts. Use when the user asks for an Obsidian canvas, visual map, knowledge graph, board, flow, or .canvas file.",
+      "path": "skills/imported/ntaffzii-obsidian-canvas/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/ntaffzii/Skill-Agents/HEAD/skills/obsidian/obsidian-canvas/SKILL.md",
+      "sha256": "4309ae49d65a96d2a0dfa0145b3a5b610af652d006741ea3d4e19896e97ce1a6",
+      "missing_resources": [],
+      "license_file": "skills/imported/ntaffzii-obsidian-canvas/UPSTREAM_LICENSE"
+    },
+    {
+      "id": "bob798-svg-generator",
+      "reference": "bob798/ai-skill-kit/creative/svg-generator",
+      "repository": "https://github.com/bob798/ai-skill-kit",
+      "kind": "skill",
+      "status": "imported",
+      "enabled": true,
+      "execution": "instructions_only",
+      "files": [
+        "SKILL.md",
+        "references/svg-brief-template.md",
+        "references/svg-types.md"
+      ],
+      "description": "Generates SVG graphics from the user's communication goal instead of jumping straight to drawing. Use this skill when the user wants to create an SVG, make a diagram, generate a cover, visualize an idea, turn text into an infographic, draw a flowchart, framework, comparison chart, quote card, social graphic, or lightweight web illustration. Trigger on requests like 做一个SVG, 画个图, 生成封面图, 可视化这个观点, make an SVG, create a diagram, generate a vector graphic, or turn this content into a visual.",
+      "path": "skills/imported/bob798-svg-generator/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/bob798/ai-skill-kit/HEAD/creative/svg-generator/SKILL.md",
+      "sha256": "30a9451c1503860b26ef2a779d4b3e9d7316e85f91ad6a26b768109cf359f48b",
+      "missing_resources": []
+    },
+    {
+      "id": "mn755-mission-control-creative-web-artifacts",
+      "reference": "MN755/Codex-Mission_Control/plugins/mission-control/skills/mission-control-creative-web-artifacts",
+      "repository": "https://github.com/MN755/Codex-Mission_Control",
+      "kind": "skill",
+      "status": "imported",
+      "enabled": true,
+      "execution": "instructions_only",
+      "files": [
+        "SKILL.md"
+      ],
+      "description": "Plan creative web artifacts, themed pages, demos, and visual prototypes through Mission Control while preserving project guardrails and validation.",
+      "path": "skills/imported/mn755-mission-control-creative-web-artifacts/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/MN755/Codex-Mission_Control/HEAD/plugins/mission-control/skills/mission-control-creative-web-artifacts/SKILL.md",
+      "sha256": "5f55814e30bd2d4234c8c053aa034a3162856584bd8bd778b164f99bf5b857c0",
+      "missing_resources": [],
+      "license_file": "skills/imported/mn755-mission-control-creative-web-artifacts/UPSTREAM_LICENSE"
+    },
+    {
+      "id": "lucasjamil-shotspec",
+      "reference": "lucasjamil/shotspec",
+      "repository": "https://github.com/lucasjamil/shotspec",
+      "kind": "skill",
+      "status": "imported",
+      "enabled": true,
+      "execution": "instructions_only",
+      "files": [
+        "SKILL.md",
+        "references/design-spec.md",
+        "references/examples.md",
+        "references/templates.md"
+      ],
+      "description": "Convert a screenshot of a website, app, or social media post into clean, structured Markdown optimized for feeding to LLMs. Works in two modes. CONTENT mode turns a tweet, post, thread, chat, article, or dashboard into faithful machine-readable text for use as LLM context. DESIGN mode turns a screenshot of a good-looking site or app into a precise design spec covering colors, typography, spacing, layout, components, and imagery style, so an LLM can rebuild the UI in that style instead of guessing from a raw image. Use this skill whenever the user uploads an image of a web page, app UI, dashboard, or social post and wants it turned into Markdown, including phrasings like \"make this into markd",
+      "path": "skills/imported/lucasjamil-shotspec/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/lucasjamil/shotspec/HEAD/SKILL.md",
+      "sha256": "e8889448cbe69415f2fb97a964ff65277cb2fdfa36086e156e551dcd2fa1ed8c",
+      "missing_resources": [],
+      "license_file": "skills/imported/lucasjamil-shotspec/UPSTREAM_LICENSE"
+    },
+    {
+      "id": "github-github-mcp-server",
+      "reference": "github/github-mcp-server/io.github.github/github-mcp-server",
+      "repository": "https://github.com/github/github-mcp-server",
+      "kind": "mcp",
+      "status": "reference_only",
+      "enabled": false,
+      "execution": "instructions_only",
+      "files": [
+        "README.md"
+      ],
+      "description": "[![Go Report Card](https://goreportcard.com/badge/github.com/github/github-mcp-server)](https://goreportcard.com/report/github.com/github/github-mcp-server)\n\n# GitHub MCP Server\n\nThe GitHub MCP Server connects AI tools directly to GitHub's platform. This gives AI agents, assistants, and chatbots the ability to read repositories and code files, manage issues and PRs, analyze code, and automate work",
+      "path": "skills/imported/github-github-mcp-server/README.md",
+      "source_url": "https://raw.githubusercontent.com/github/github-mcp-server/HEAD/README.md",
+      "sha256": "0686b41067fd437abbde4b473c394fe2365e5ad2ae81c21b9f988735359c9666",
+      "missing_resources": [],
+      "license_file": "skills/imported/github-github-mcp-server/UPSTREAM_LICENSE"
+    },
+    {
+      "id": "anthropics-skill-creator",
+      "reference": "anthropics/skills/skills/skill-creator",
+      "repository": "https://github.com/anthropics/skills",
+      "kind": "skill",
+      "status": "imported",
+      "enabled": true,
+      "execution": "instructions_only",
+      "files": [
+        "SKILL.md",
+        "references/schemas.md"
+      ],
+      "description": "Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit, or optimize an existing skill, run evals to test a skill, benchmark skill performance with variance analysis, or optimize a skill's description for better triggering accuracy.",
+      "path": "skills/imported/anthropics-skill-creator/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/anthropics/skills/HEAD/skills/skill-creator/SKILL.md",
+      "sha256": "dcd4803e61e913e6fc27294184cd3a71f09f5e924ff20c8a9a20173e7b3c2bcf",
+      "missing_resources": []
+    },
+    {
+      "id": "composiohq-artifacts-builder",
+      "reference": "ComposioHQ/awesome-claude-skills/artifacts-builder",
+      "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+      "kind": "skill",
+      "status": "imported",
+      "enabled": true,
+      "execution": "instructions_only",
+      "files": [
+        "SKILL.md"
+      ],
+      "description": "Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui). Use for complex artifacts requiring state management, routing, or shadcn/ui components - not for simple single-file HTML/JSX artifacts.",
+      "path": "skills/imported/composiohq-artifacts-builder/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/ComposioHQ/awesome-claude-skills/HEAD/artifacts-builder/SKILL.md",
+      "sha256": "8455a64e627d203fd7b43df64c83d8870cb98907aae21edce4ec8eeef651d850",
+      "missing_resources": []
+    },
+    {
+      "id": "shanraisshan-agent-browser",
+      "reference": "shanraisshan/claude-code-best-practice/.claude/skills/agent-browser",
+      "repository": "https://github.com/shanraisshan/claude-code-best-practice",
+      "kind": "skill",
+      "status": "imported",
+      "enabled": true,
+      "execution": "instructions_only",
+      "files": [
+        "SKILL.md"
+      ],
+      "description": "Browser automation CLI for AI agents. Use when the user needs to interact with websites, including navigating pages, filling forms, clicking buttons, taking screenshots, extracting data, testing web apps, or automating any browser task. Triggers include requests to \"open a website\", \"fill out a form\", \"click a button\", \"take a screenshot\", \"scrape data from a page\", \"test this web app\", \"login to a site\", \"automate browser actions\", or any task requiring programmatic web interaction.",
+      "path": "skills/imported/shanraisshan-agent-browser/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/shanraisshan/claude-code-best-practice/HEAD/.claude/skills/agent-browser/SKILL.md",
+      "sha256": "84effb42371bac499123843088fe4304d8b7c5de765722e3ad92cc0f7cc68557",
+      "missing_resources": [
+        "references/authentication.md",
+        "references/commands.md",
+        "references/proxy-support.md",
+        "references/session-management.md",
+        "references/snapshot-refs.md",
+        "references/video-recording.md"
+      ],
+      "license_file": "skills/imported/shanraisshan-agent-browser/UPSTREAM_LICENSE"
+    },
+    {
+      "id": "tldraw-tldraw",
+      "reference": "tldraw/tldraw/io.github.tldraw/tldraw",
+      "repository": "https://github.com/tldraw/tldraw",
+      "kind": "mcp",
+      "status": "reference_only",
+      "enabled": false,
+      "execution": "instructions_only",
+      "files": [
+        "README.md"
+      ],
+      "description": "<div alt style=\"text-align: center; transform: scale(.25);\">\n\t<picture>\n\t\t<source media=\"(prefers-color-scheme: dark)\" srcset=\"https://github.com/tldraw/tldraw/raw/main/assets/github-hero-dark.png\" />\n\t\t<img alt=\"tldraw\" src=\"https://github.com/tldraw/tldraw/raw/main/assets/github-hero-light.png\" />\n\t</picture>\n</div>\n\n<p align=\"center\">\n  <a href=\"https://www.npmjs.com/package/tldraw\"><img src=\"h",
+      "path": "skills/imported/tldraw-tldraw/README.md",
+      "source_url": "https://raw.githubusercontent.com/tldraw/tldraw/HEAD/README.md",
+      "sha256": "1e35efa97844b08409feb26294c4eac533207057d7595e8e7d3b80cf1a333d5b",
+      "missing_resources": [],
+      "license_file": "skills/imported/tldraw-tldraw/UPSTREAM_LICENSE"
+    },
+    {
+      "id": "chromedevtools-chrome-devtools-mcp",
+      "reference": "ChromeDevTools/chrome-devtools-mcp/io.github.ChromeDevTools/chrome-devtools-mcp",
+      "repository": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "kind": "mcp",
+      "status": "reference_only",
+      "enabled": false,
+      "execution": "instructions_only",
+      "files": [
+        "README.md"
+      ],
+      "description": "# Chrome DevTools for agents\n\n[![npm chrome-devtools-mcp package](https://img.shields.io/npm/v/chrome-devtools-mcp.svg)](https://npmjs.org/package/chrome-devtools-mcp)\n\nChrome DevTools for agents (`chrome-devtools-mcp`) lets your coding agent (such as Antigravity, Claude, Cursor or Copilot)\ncontrol and inspect a live Chrome browser. It acts as a Model-Context-Protocol\n(MCP) server, giving your AI",
+      "path": "skills/imported/chromedevtools-chrome-devtools-mcp/README.md",
+      "source_url": "https://raw.githubusercontent.com/ChromeDevTools/chrome-devtools-mcp/HEAD/README.md",
+      "sha256": "059a0349daaef6bda98eae6d9384ed349ac94b8033b18be817c317a01b472024",
+      "missing_resources": [],
+      "license_file": "skills/imported/chromedevtools-chrome-devtools-mcp/UPSTREAM_LICENSE"
+    },
+    {
+      "id": "firecrawl-firecrawl-mcp-server",
+      "reference": "firecrawl/firecrawl-mcp-server/io.github.firecrawl/firecrawl-mcp-server",
+      "repository": "https://github.com/firecrawl/firecrawl-mcp-server",
+      "kind": "mcp",
+      "status": "reference_only",
+      "enabled": false,
+      "execution": "instructions_only",
+      "files": [
+        "README.md"
+      ],
+      "description": "<div align=\"center\">\n  <a name=\"readme-top\"></a>\n  <img\n    src=\"https://raw.githubusercontent.com/firecrawl/firecrawl-mcp-server/main/img/fire.png\"\n    height=\"140\"\n  >\n</div>\n\n# Firecrawl MCP Server\n\nA Model Context Protocol (MCP) server that brings [Firecrawl](https://github.com/firecrawl/firecrawl) to MCP-compatible AI agents — search, scrape, and interact with the live web for clean, agent-re",
+      "path": "skills/imported/firecrawl-firecrawl-mcp-server/README.md",
+      "source_url": "https://raw.githubusercontent.com/firecrawl/firecrawl-mcp-server/HEAD/README.md",
+      "sha256": "65a4a94e1be7c6253b15e574ec4aefa9ce21f10035de6600fe3f0caacca42785",
+      "missing_resources": [],
+      "license_file": "skills/imported/firecrawl-firecrawl-mcp-server/UPSTREAM_LICENSE"
+    },
+    {
+      "id": "exa-labs-exa",
+      "reference": "exa-labs/exa-mcp-server/ai.exa/exa",
+      "repository": "https://github.com/exa-labs/exa-mcp-server",
+      "kind": "mcp",
+      "status": "reference_only",
+      "enabled": false,
+      "execution": "instructions_only",
+      "files": [
+        "README.md"
+      ],
+      "description": "<h1 align=\"center\">\n  <img src=\"assets/Exa.svg\" alt=\"Exa\" width=\"64\" />\n  <br>\n  Exa MCP Server\n</h1>\n\n<p align=\"center\">Connect AI agents to Exa for web search, content fetching, and multi-step research.</p>\n\n<p align=\"center\">\n  <a href=\"https://cursor.com/en/install-mcp?name=exa&config=eyJ1cmwiOiJodHRwczovL21jcC5leGEuYWkvbWNwIn0=\"><img src=\"https://custom-icon-badges.demolab.com/badge/Install_i",
+      "path": "skills/imported/exa-labs-exa/README.md",
+      "source_url": "https://raw.githubusercontent.com/exa-labs/exa-mcp-server/HEAD/README.md",
+      "sha256": "08a2ffb7efbfd07dbadac74435f8cabb2a265cc3389dfcc4a3303b42c21a934f",
+      "missing_resources": [],
+      "license_file": "skills/imported/exa-labs-exa/UPSTREAM_LICENSE"
+    },
+    {
+      "id": "eugeniughelbur-obsidian-second-brain",
+      "reference": "eugeniughelbur/obsidian-second-brain",
+      "repository": "https://github.com/eugeniughelbur/obsidian-second-brain",
+      "kind": "skill",
+      "status": "imported",
+      "enabled": true,
+      "execution": "instructions_only",
+      "files": [
+        "SKILL.md",
+        "references/ai-first-rules.md",
+        "references/claude-md-assistant-template.md",
+        "references/claude-md-template.md",
+        "references/folder-map.md",
+        "references/freshness-policy.md",
+        "references/taxonomy-format.md",
+        "references/vault-schema.md",
+        "references/write-rules.md",
+        "scripts/architect_scan.py",
+        "scripts/bootstrap_vault.py",
+        "scripts/eval/retrieval_eval.py",
+        "scripts/export_okf.py",
+        "scripts/freshness_lint.py",
+        "scripts/link_graph.py",
+        "scripts/merge_notes.py",
+        "scripts/migrate_log.py",
+        "scripts/mine_commit_decisions.py",
+        "scripts/vault_health.py",
+        "scripts/vault_stats.py"
+      ],
+      "description": ">",
+      "path": "skills/imported/eugeniughelbur-obsidian-second-brain/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/eugeniughelbur/obsidian-second-brain/HEAD/SKILL.md",
+      "sha256": "2f3dadd907a6541fa48e7e250e3c8dae0cb21380f600d589fc441a53a27cefec",
+      "missing_resources": [],
+      "license_file": "skills/imported/eugeniughelbur-obsidian-second-brain/UPSTREAM_LICENSE"
+    },
+    {
+      "id": "blazickjp-arxiv-mcp-server",
+      "reference": "blazickjp/arxiv-mcp-server/io.github.blazickjp/arxiv-mcp-server",
+      "repository": "https://github.com/blazickjp/arxiv-mcp-server",
+      "kind": "mcp",
+      "status": "reference_only",
+      "enabled": false,
+      "execution": "instructions_only",
+      "files": [
+        "README.md"
+      ],
+      "description": "# arxiv-mcp-server\n\n<!-- mcp-name: io.github.blazickjp/arxiv-mcp-server -->\n\n[![PyPI](https://img.shields.io/pypi/v/arxiv-mcp-server.svg)](https://pypi.org/project/arxiv-mcp-server/)\n[![Downloads](https://static.pepy.tech/badge/arxiv-mcp-server)](https://pypi.org/project/arxiv-mcp-server/)\n[![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)\n[![MCP Registry](https://img",
+      "path": "skills/imported/blazickjp-arxiv-mcp-server/README.md",
+      "source_url": "https://raw.githubusercontent.com/blazickjp/arxiv-mcp-server/HEAD/README.md",
+      "sha256": "438a92cea968575e9c172c042958a7dd6c6b4655e4bd0ef37171d7e0a98f5871",
+      "missing_resources": [],
+      "license_file": "skills/imported/blazickjp-arxiv-mcp-server/UPSTREAM_LICENSE"
+    },
+    {
+      "id": "supabase-mcp",
+      "reference": "supabase/mcp/com.supabase/mcp",
+      "repository": "https://github.com/supabase/mcp",
+      "kind": "mcp",
+      "status": "reference_only",
+      "enabled": false,
+      "execution": "instructions_only",
+      "files": [
+        "README.md"
+      ],
+      "description": "# Supabase MCP Server\n\n[![MCP Registry Version](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fregistry.modelcontextprotocol.io%2Fv0.1%2Fservers%2Fcom.supabase%252Fmcp%2Fversions%2Flatest&query=%24.server.version&label=MCP%20Registry&logo=modelcontextprotocol)](https://registry.modelcontextprotocol.io/?q=com.supabase%2Fmcp)\n\n> Connect your Supabase projects to Cursor, Claude, Windsurf",
+      "path": "skills/imported/supabase-mcp/README.md",
+      "source_url": "https://raw.githubusercontent.com/supabase/mcp/HEAD/README.md",
+      "sha256": "d9e85af2bfbd2414a92a1e7ac3c35b9d5aef74b42312e4d7ec2c3bf04a80bdd2",
+      "missing_resources": [],
+      "license_file": "skills/imported/supabase-mcp/UPSTREAM_LICENSE"
+    },
+    {
+      "id": "nvidia-nvidia-skill-finder",
+      "reference": "NVIDIA/skills/plugins/nvidia-skills/skills/nvidia-skill-finder",
+      "repository": "https://github.com/NVIDIA/skills",
+      "kind": "skill",
+      "status": "imported",
+      "enabled": true,
+      "execution": "instructions_only",
+      "files": [
+        "SKILL.md",
+        "references/taxonomy-routing.md"
+      ],
+      "description": ">-",
+      "path": "skills/imported/nvidia-nvidia-skill-finder/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/NVIDIA/skills/HEAD/plugins/nvidia-skills/skills/nvidia-skill-finder/SKILL.md",
+      "sha256": "51fe4ff117f34919527ad4540513910e16eb225f7ad04686fbbe985035fdf9cf",
+      "missing_resources": []
+    },
+    {
+      "id": "llmsresearch-paperbanana",
+      "reference": "llmsresearch/paperbanana/io.github.llmsresearch/paperbanana",
+      "repository": "https://github.com/llmsresearch/paperbanana",
+      "kind": "mcp",
+      "status": "reference_only",
+      "enabled": false,
+      "execution": "instructions_only",
+      "files": [
+        "README.md"
+      ],
+      "description": "<!-- mcp-name: io.github.llmsresearch/paperbanana -->\n<table align=\"center\" width=\"100%\" style=\"border: none; border-collapse: collapse;\">\n  <tr>\n    <td width=\"220\" align=\"left\" valign=\"middle\" style=\"border: none;\">\n      <img src=\"https://dwzhu-pku.github.io/PaperBanana/static/images/logo.jpg\" alt=\"PaperBanana Logo\" width=\"180\"/>\n    </td>\n    <td align=\"left\" valign=\"middle\" style=\"border: non",
+      "path": "skills/imported/llmsresearch-paperbanana/README.md",
+      "source_url": "https://raw.githubusercontent.com/llmsresearch/paperbanana/HEAD/README.md",
+      "sha256": "c1871ec7bc529876d47c853feedcfddc5bc3a350f8669ec3ec06762d3c3b9eb6",
+      "missing_resources": [],
+      "license_file": "skills/imported/llmsresearch-paperbanana/UPSTREAM_LICENSE"
+    },
+    {
+      "id": "openosint-openosint",
+      "reference": "OpenOSINT/OpenOSINT/io.github.OpenOSINT/openosint",
+      "repository": "https://github.com/OpenOSINT/OpenOSINT",
+      "kind": "mcp",
+      "status": "reference_only",
+      "enabled": false,
+      "execution": "instructions_only",
+      "files": [
+        "README.md",
+        "scripts/record-demo/README.md"
+      ],
+      "description": "mcp-name: io.github.OpenOSINT/openosint\n\n<div align=\"center\">\n  <img src=\"https://raw.githubusercontent.com/OpenOSINT/OpenOSINT/main/docs/logo.svg\" alt=\"OpenOSINT\" width=\"200\" />\n  <h1>OpenOSINT</h1>\n  <p>An OSINT (Open Source Intelligence) agent for security researchers and analysts: 20 investigation tools behind a natural-language interface, plus an MCP (Model Context Protocol) server so any MCP",
+      "path": "skills/imported/openosint-openosint/README.md",
+      "source_url": "https://raw.githubusercontent.com/OpenOSINT/OpenOSINT/HEAD/README.md",
+      "sha256": "d69c3f2b19df0bd949a102055647aeefb069d2da24ac6bd1bad385f8885aacc0",
+      "missing_resources": [],
+      "license_file": "skills/imported/openosint-openosint/UPSTREAM_LICENSE"
+    },
+    {
+      "id": "jezweb-cloudflare-api",
+      "reference": "jezweb/claude-skills/plugins/cloudflare/skills/cloudflare-api",
+      "repository": "https://github.com/jezweb/claude-skills",
+      "kind": "skill",
+      "status": "imported",
+      "enabled": true,
+      "execution": "instructions_only",
+      "files": [
+        "SKILL.md",
+        "references/developer-platform-api.md"
+      ],
+      "description": "Hit the Cloudflare REST API directly for operations that wrangler and MCP can't handle well. Bulk DNS, custom hostnames, email routing, cache purge, WAF rules, redirect rules, zone settings, Worker routes, D1 cross-database queries, R2 bulk operations, KV bulk read/write, Vectorize queries, Queues, and fleet-wide resource audits. Produces curl commands or scripts. Triggers: 'cloudflare api', 'bulk dns', 'custom hostname', 'email routing', 'cache purge', 'waf rule', 'd1 query', 'r2 bucket', 'kv bulk', 'vectorize query', 'audit resources', 'fleet operation'.",
+      "path": "skills/imported/jezweb-cloudflare-api/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/jezweb/claude-skills/HEAD/plugins/cloudflare/skills/cloudflare-api/SKILL.md",
+      "sha256": "dc3d409785ee0fb5ea5c7e7619769431c19beb5b80e7a053a0e229544c2bd9de",
+      "missing_resources": [],
+      "license_file": "skills/imported/jezweb-cloudflare-api/UPSTREAM_LICENSE"
+    },
+    {
+      "id": "sylphxai-pdf-reader-mcp",
+      "reference": "SylphxAI/pdf-reader-mcp/io.github.SylphxAI/pdf-reader-mcp",
+      "repository": "https://github.com/SylphxAI/pdf-reader-mcp",
+      "kind": "mcp",
+      "status": "reference_only",
+      "enabled": false,
+      "execution": "instructions_only",
+      "files": [
+        "README.md"
+      ],
+      "description": "<div align=\"center\">\n\n<img src=\"docs/public/og-image.png\" alt=\"anymd — any file → clean Markdown for AI agents\" width=\"820\" />\n\n<h1 hidden>anymd</h1>\n\n<!-- generated:lead -->\nPDF, Word, PowerPoint, Excel, EPUB, HTML and web pages, images (OCR), audio and video (metadata, subtitles, transcripts). A fast Rust MCP server and CLI that runs on your machine. No API key.\n<!-- /generated:lead -->\n\n[![npm]",
+      "path": "skills/imported/sylphxai-pdf-reader-mcp/README.md",
+      "source_url": "https://raw.githubusercontent.com/SylphxAI/pdf-reader-mcp/HEAD/README.md",
+      "sha256": "7e3efe6c12aa8475c891d211e485e677e93102ca8ecb710d24c22216f985e53b",
+      "missing_resources": [],
+      "license_file": "skills/imported/sylphxai-pdf-reader-mcp/UPSTREAM_LICENSE"
+    },
+    {
+      "id": "kostja94-google-search-console",
+      "reference": "kostja94/marketing-skills/skills/analytics/seo/google-search-console",
+      "repository": "https://github.com/kostja94/marketing-skills",
+      "kind": "skill",
+      "status": "imported",
+      "enabled": true,
+      "execution": "instructions_only",
+      "files": [
+        "SKILL.md"
+      ],
+      "description": "When the user wants to analyze Google Search Console data, use the GSC API, or interpret search performance. Also use when the user mentions \"GSC,\" \"Search Console,\" \"indexing report,\" \"Core Web Vitals,\" \"Enhancements,\" \"Insights report,\" \"search performance,\" \"search queries,\" \"search performance report,\" \"URL inspection,\" \"impressions,\" \"CTR,\" \"average position,\" \"index coverage,\" \"GSC data analysis,\" \"Search Console API,\" or \"searchanalytics.query.\" When the user wants to rewrite title tags (not only report on them), use title-tag. For meta description rewrites, use meta-description.",
+      "path": "skills/imported/kostja94-google-search-console/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/kostja94/marketing-skills/HEAD/skills/analytics/seo/google-search-console/SKILL.md",
+      "sha256": "0649408558f273cd32148cc4f46a2a745531b50f30867f47a052ac536d359ba7",
+      "missing_resources": [],
+      "license_file": "skills/imported/kostja94-google-search-console/UPSTREAM_LICENSE"
+    },
+    {
+      "id": "nicholasspisak-second-brain-ingest",
+      "reference": "NicholasSpisak/second-brain/skills/second-brain-ingest",
+      "repository": "https://github.com/NicholasSpisak/second-brain",
+      "kind": "skill",
+      "status": "imported",
+      "enabled": true,
+      "execution": "instructions_only",
+      "files": [
+        "SKILL.md"
+      ],
+      "description": ">",
+      "path": "skills/imported/nicholasspisak-second-brain-ingest/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/NicholasSpisak/second-brain/HEAD/skills/second-brain-ingest/SKILL.md",
+      "sha256": "5257b3b986ab707accda75e03c11bf9de3b3779d955f00c409f783bc564da29a",
+      "missing_resources": []
+    },
+    {
+      "id": "ggozad-haiku-rag",
+      "reference": "ggozad/haiku.rag/io.github.ggozad/haiku-rag",
+      "repository": "https://github.com/ggozad/haiku.rag",
+      "kind": "mcp",
+      "status": "reference_only",
+      "enabled": false,
+      "execution": "instructions_only",
+      "files": [
+        "README.md"
+      ],
+      "description": "# haiku.rag\n\n[![PyPI](https://img.shields.io/pypi/v/haiku.rag)](https://pypi.org/project/haiku.rag/)\n[![Python](https://img.shields.io/pypi/pyversions/haiku.rag)](https://pypi.org/project/haiku.rag/)\n[![Downloads](https://static.pepy.tech/badge/haiku-rag-slim/month)](https://pepy.tech/projects/haiku-rag-slim)\n[![Docs](https://img.shields.io/badge/docs-ggozad.github.io-blue)](https://ggozad.github.",
+      "path": "skills/imported/ggozad-haiku-rag/README.md",
+      "source_url": "https://raw.githubusercontent.com/ggozad/haiku.rag/HEAD/README.md",
+      "sha256": "818208eafad646ac46ce33eb920a889f2af4ccf01c0a80537fee9b3aa5c3ecd1",
+      "missing_resources": [],
+      "license_file": "skills/imported/ggozad-haiku-rag/UPSTREAM_LICENSE"
+    },
+    {
+      "id": "sergebulaev-linkedin-skills",
+      "reference": "sergebulaev/linkedin-skills/.codex-marketplace/linkedin-skills",
+      "repository": "https://github.com/sergebulaev/linkedin-skills",
+      "kind": "skill",
+      "status": "imported",
+      "enabled": true,
+      "execution": "instructions_only",
+      "files": [
+        "SKILL.md",
+        "references/algorithm-heuristics.md",
+        "references/founder-topics.md",
+        "references/hook-formulas.md",
+        "references/story-bank.md",
+        "references/untrusted-content.md",
+        "references/voice-rules.md",
+        "scripts/check_config.py"
+      ],
+      "description": "Plan, draft, audit, and publish LinkedIn posts and comments. Use when the user wants to write a viral LinkedIn post, draft a comment or reply on any LinkedIn post URL, audit a draft against 2026 algorithm heuristics, remove AI tells, extract hook formulas from viral posts, or plan a week of content. Powered by the Publora API for publishing. User provides post/comment URLs, skill drafts content, user approves, then publishes.",
+      "path": "skills/imported/sergebulaev-linkedin-skills/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/sergebulaev/linkedin-skills/HEAD/.codex-marketplace/linkedin-skills/SKILL.md",
+      "sha256": "ba248def9f2612a16712eb3933c4e6cc4ec13f8dfcfb31cc9e1cbec9b88eef56",
+      "missing_resources": [],
+      "license_file": "skills/imported/sergebulaev-linkedin-skills/UPSTREAM_LICENSE"
+    }
+  ]
+}

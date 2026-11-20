@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "research-agent-factory"
+version = "0.1.0"
+description = "Local research agent factory with contracts, budgets and auditable validation"
+requires-python = ">=3.11"
+dependencies = [
+  "pydantic>=2.12,<3", "pydantic-settings>=2.15,<3",
+  "langchain>=1.3,<2", "langchain-openai>=1.6,<2",
+  "langchain-openrouter>=0.2.8,<0.3", "httpx>=0.28,<1", "pytest>=9,<10",
+  "fastapi>=0.141,<1", "uvicorn>=0.52,<1", "python-multipart>=0.0.20,<1",
+  "pypdf>=6,<7", "python-docx>=1.2,<2", "mcp>=1.20,<2",
+  "beautifulsoup4>=4.13,<5",
+]
+
+[project.scripts]
+agent-factory = "app.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["app*", "config", "skills"]
+
+[tool.setuptools.package-data]
+config = ["*.json"]
+app = ["static/*.html", "static/*.css", "static/*.js", "static/assets/*.png", "static/vendor/*.js", "static/vendor/*.txt"]
+skills = ["imported/*/*", "imported/*/*/*", "imported/*/*/*/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--strict-markers"

@@ -1,0 +1,18 @@
+{
+  "id": "charlieviettq-machine-learning-engineer",
+  "reference": "charlieviettq/awesome-agent-skill/.cursor/skills/voltagent/data-ai/machine-learning-engineer",
+  "repository": "https://github.com/charlieviettq/awesome-agent-skill",
+  "kind": "skill",
+  "status": "imported",
+  "enabled": true,
+  "execution": "instructions_only",
+  "files": [
+    "SKILL.md"
+  ],
+  "description": "Use this agent when you need to deploy, optimize, or serve machine learning models at scale in production environments.",
+  "path": "skills/imported/charlieviettq-machine-learning-engineer/SKILL.md",
+  "source_url": "https://raw.githubusercontent.com/charlieviettq/awesome-agent-skill/HEAD/.cursor/skills/voltagent/data-ai/machine-learning-engineer/SKILL.md",
+  "sha256": "e9a858aebc5e58e16a9a47ed45a03ba764a16aebd9fa8df3a1ecbc4f98638792",
+  "missing_resources": [],
+  "license_file": "skills/imported/charlieviettq-machine-learning-engineer/UPSTREAM_LICENSE"
+}

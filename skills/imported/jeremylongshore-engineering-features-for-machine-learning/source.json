@@ -1,0 +1,18 @@
+{
+  "id": "jeremylongshore-engineering-features-for-machine-learning",
+  "reference": "jeremylongshore/claude-code-plugins-plus-skills/skills/.curated/engineering-features-for-machine-learning",
+  "repository": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills",
+  "kind": "skill",
+  "status": "imported",
+  "enabled": true,
+  "execution": "instructions_only",
+  "files": [
+    "SKILL.md"
+  ],
+  "description": "Execute create, select, and transform features to improve machine learning",
+  "path": "skills/imported/jeremylongshore-engineering-features-for-machine-learning/SKILL.md",
+  "source_url": "https://raw.githubusercontent.com/jeremylongshore/claude-code-plugins-plus-skills/HEAD/skills/.curated/engineering-features-for-machine-learning/SKILL.md",
+  "sha256": "5185ec3aeeb83001d77974c0b0536ec6b64f0e8744cc9ef2e2cf33b5e92ab0ac",
+  "missing_resources": [],
+  "license_file": "skills/imported/jeremylongshore-engineering-features-for-machine-learning/UPSTREAM_LICENSE"
+}

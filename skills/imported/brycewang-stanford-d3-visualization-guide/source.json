@@ -1,0 +1,18 @@
+{
+  "id": "brycewang-stanford-d3-visualization-guide",
+  "reference": "brycewang-stanford/Auto-Empirical-Research-Skills/skills/43-wentorai-research-plugins/skills/analysis/dataviz/d3-visualization-guide",
+  "repository": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills",
+  "kind": "skill",
+  "status": "imported",
+  "enabled": true,
+  "execution": "instructions_only",
+  "files": [
+    "SKILL.md"
+  ],
+  "description": "Guide to D3.js for building custom interactive data visualizations",
+  "path": "skills/imported/brycewang-stanford-d3-visualization-guide/SKILL.md",
+  "source_url": "https://raw.githubusercontent.com/brycewang-stanford/Auto-Empirical-Research-Skills/HEAD/skills/43-wentorai-research-plugins/skills/analysis/dataviz/d3-visualization-guide/SKILL.md",
+  "sha256": "520a5d0163a6311073a989887d21bd1cad6623d2913d09c1e480a03a99eaa8d0",
+  "missing_resources": [],
+  "license_file": "skills/imported/brycewang-stanford-d3-visualization-guide/UPSTREAM_LICENSE"
+}

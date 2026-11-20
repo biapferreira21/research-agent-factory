@@ -1,0 +1,225 @@
+{
+  "schema_version": "1.0",
+  "models": [
+    {
+      "provider": "openrouter",
+      "model": "openrouter/free",
+      "enabled": true,
+      "is_router": true,
+      "context_window": 200000,
+      "max_output_tokens": 4096,
+      "tool_calling": true,
+      "structured_output": true,
+      "pricing": {
+        "kind": "flat_text",
+        "input_usd_per_million": "0",
+        "output_usd_per_million": "0",
+        "request_usd": "0",
+        "source": "https://openrouter.ai/openrouter/free",
+        "checked_on": "2026-11-20",
+        "valid_for_days": 30
+      },
+      "notes": "Router mantido por escolha do utilizador. Contexto, preços e capacidades conferidos no catálogo público OpenRouter. 4096 é um limite local de output, não o máximo anunciado pelo fornecedor. O modelo resolvido pode variar."
+    },
+    {
+      "provider": "openrouter",
+      "model": "apodex/apodex-1.1-mini:free",
+      "enabled": true,
+      "is_router": false,
+      "context_window": 200000,
+      "max_output_tokens": 8192,
+      "tool_calling": true,
+      "structured_output": true,
+      "pricing": {
+        "kind": "flat_text",
+        "input_usd_per_million": "0",
+        "output_usd_per_million": "0",
+        "request_usd": "0",
+        "source": "https://openrouter.ai/apodex/apodex-1.1-mini:free",
+        "checked_on": "2026-11-20",
+        "valid_for_days": 30
+      },
+      "notes": "Named free reasoning model for research and forecasting. Unlike the free router, the selected model stays stable between calls."
+    },
+    {
+      "provider": "openrouter",
+      "model": "upstage/solar-mini4",
+      "enabled": true,
+      "is_router": false,
+      "context_window": 200000,
+      "max_output_tokens": 8192,
+      "tool_calling": true,
+      "structured_output": true,
+      "pricing": {
+        "kind": "flat_text",
+        "input_usd_per_million": "0.05",
+        "output_usd_per_million": "0.20",
+        "request_usd": "0",
+        "source": "https://openrouter.ai/upstage/solar-mini4",
+        "checked_on": "2026-11-20",
+        "valid_for_days": 30
+      },
+      "notes": "Very fast and low-cost named model for intake questions, summaries and routine agent chat."
+    },
+    {
+      "provider": "openrouter",
+      "model": "cohere/command-a-plus",
+      "enabled": true,
+      "is_router": false,
+      "context_window": 192000,
+      "max_output_tokens": 8192,
+      "tool_calling": true,
+      "structured_output": true,
+      "pricing": {
+        "kind": "flat_text",
+        "input_usd_per_million": "0.30",
+        "output_usd_per_million": "1.50",
+        "request_usd": "0",
+        "source": "https://openrouter.ai/cohere/command-a-plus",
+        "checked_on": "2026-11-20",
+        "valid_for_days": 30
+      },
+      "notes": "Balanced enterprise agent model with native tool calling and structured output."
+    },
+    {
+      "provider": "openrouter",
+      "model": "openai/gpt-6-luna",
+      "enabled": true,
+      "is_router": false,
+      "context_window": 200000,
+      "max_output_tokens": 8192,
+      "tool_calling": true,
+      "structured_output": true,
+      "pricing": {
+        "kind": "flat_text",
+        "input_usd_per_million": "0.10",
+        "output_usd_per_million": "0.50",
+        "request_usd": "0",
+        "source": "https://openrouter.ai/openai/gpt-6-luna",
+        "checked_on": "2026-11-20",
+        "valid_for_days": 30
+      },
+      "notes": "Fast paid option. The 200k context and 8192 output values are local factory limits used for budget reservation."
+    },
+    {
+      "provider": "openrouter",
+      "model": "openai/gpt-6-luna-pro",
+      "enabled": true,
+      "is_router": false,
+      "context_window": 200000,
+      "max_output_tokens": 8192,
+      "tool_calling": true,
+      "structured_output": true,
+      "pricing": {
+        "kind": "flat_text",
+        "input_usd_per_million": "0.10",
+        "output_usd_per_million": "0.50",
+        "request_usd": "0",
+        "source": "https://openrouter.ai/openai/gpt-6-luna-pro",
+        "checked_on": "2026-11-20",
+        "valid_for_days": 30
+      },
+      "notes": "Fast OpenAI model with a stronger reasoning mode at the same published token price."
+    },
+    {
+      "provider": "openrouter",
+      "model": "openai/gpt-6-sol",
+      "enabled": true,
+      "is_router": false,
+      "context_window": 200000,
+      "max_output_tokens": 8192,
+      "tool_calling": true,
+      "structured_output": true,
+      "pricing": {
+        "kind": "flat_text",
+        "input_usd_per_million": "2.00",
+        "output_usd_per_million": "10.00",
+        "request_usd": "0",
+        "source": "https://openrouter.ai/openai/gpt-6-sol",
+        "checked_on": "2026-11-20",
+        "valid_for_days": 30
+      },
+      "notes": "Strong reasoning and coding option. Local limits keep the maximum per-call reservation below the factory's US$1 budget."
+    },
+    {
+      "provider": "openrouter",
+      "model": "openai/gpt-6.1-sol",
+      "enabled": true,
+      "is_router": false,
+      "context_window": 200000,
+      "max_output_tokens": 8192,
+      "tool_calling": true,
+      "structured_output": true,
+      "pricing": {
+        "kind": "flat_text",
+        "input_usd_per_million": "2.00",
+        "output_usd_per_million": "10.00",
+        "request_usd": "0",
+        "source": "https://openrouter.ai/openai/gpt-6.1-sol",
+        "checked_on": "2026-11-20",
+        "valid_for_days": 30
+      },
+      "notes": "Stronger OpenAI option for document-heavy research, coding and complex synthesis."
+    },
+    {
+      "provider": "openrouter",
+      "model": "openai/gpt-6.1-sol-pro",
+      "enabled": true,
+      "is_router": false,
+      "context_window": 200000,
+      "max_output_tokens": 8192,
+      "tool_calling": true,
+      "structured_output": true,
+      "pricing": {
+        "kind": "flat_text",
+        "input_usd_per_million": "2.00",
+        "output_usd_per_million": "10.00",
+        "request_usd": "0",
+        "source": "https://openrouter.ai/openai/gpt-6.1-sol-pro",
+        "checked_on": "2026-11-20",
+        "valid_for_days": 30
+      },
+      "notes": "Highest-quality OpenAI reasoning option in this catalogue for difficult research planning and synthesis."
+    },
+    {
+      "provider": "openrouter",
+      "model": "anthropic/claude-sonnet-5.5",
+      "enabled": true,
+      "is_router": false,
+      "context_window": 200000,
+      "max_output_tokens": 8192,
+      "tool_calling": true,
+      "structured_output": true,
+      "pricing": {
+        "kind": "flat_text",
+        "input_usd_per_million": "2.00",
+        "output_usd_per_million": "10.00",
+        "request_usd": "0",
+        "source": "https://openrouter.ai/anthropic/claude-sonnet-5.5",
+        "checked_on": "2026-11-20",
+        "valid_for_days": 30
+      },
+      "notes": "Strong alternative for research synthesis and coding. Local limits keep the maximum per-call reservation below US$1."
+    },
+    {
+      "provider": "openrouter",
+      "model": "qwen/qwen3.8-max-prime",
+      "enabled": true,
+      "is_router": false,
+      "context_window": 150000,
+      "max_output_tokens": 8192,
+      "tool_calling": true,
+      "structured_output": true,
+      "pricing": {
+        "kind": "flat_text",
+        "input_usd_per_million": "4.00",
+        "output_usd_per_million": "12.00",
+        "request_usd": "0",
+        "source": "https://openrouter.ai/qwen/qwen3.8-max-prime",
+        "checked_on": "2026-11-20",
+        "valid_for_days": 30
+      },
+      "notes": "High-throughput reasoning model with structured output and tool support. The local context cap keeps reservation below US$1."
+    }
+  ]
+}

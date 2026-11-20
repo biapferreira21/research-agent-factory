@@ -1,0 +1,18 @@
+{
+  "id": "brycewang-stanford-iv-regression-guide",
+  "reference": "brycewang-stanford/Auto-Empirical-Research-Skills/skills/43-wentorai-research-plugins/skills/analysis/econometrics/iv-regression-guide",
+  "repository": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills",
+  "kind": "skill",
+  "status": "imported",
+  "enabled": true,
+  "execution": "instructions_only",
+  "files": [
+    "SKILL.md"
+  ],
+  "description": "Apply instrumental variables, 2SLS, and address endogeneity issues",
+  "path": "skills/imported/brycewang-stanford-iv-regression-guide/SKILL.md",
+  "source_url": "https://raw.githubusercontent.com/brycewang-stanford/Auto-Empirical-Research-Skills/HEAD/skills/43-wentorai-research-plugins/skills/analysis/econometrics/iv-regression-guide/SKILL.md",
+  "sha256": "3a2d8839e02918e9d53d900d08f2b5436cce9632594a415cc9de67d320cd7eff",
+  "missing_resources": [],
+  "license_file": "skills/imported/brycewang-stanford-iv-regression-guide/UPSTREAM_LICENSE"
+}

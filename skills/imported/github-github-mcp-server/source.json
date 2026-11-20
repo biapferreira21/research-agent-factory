@@ -1,0 +1,18 @@
+{
+  "id": "github-github-mcp-server",
+  "reference": "github/github-mcp-server/io.github.github/github-mcp-server",
+  "repository": "https://github.com/github/github-mcp-server",
+  "kind": "mcp",
+  "status": "reference_only",
+  "enabled": false,
+  "execution": "instructions_only",
+  "files": [
+    "README.md"
+  ],
+  "description": "[![Go Report Card](https://goreportcard.com/badge/github.com/github/github-mcp-server)](https://goreportcard.com/report/github.com/github/github-mcp-server)\n\n# GitHub MCP Server\n\nThe GitHub MCP Server connects AI tools directly to GitHub's platform. This gives AI agents, assistants, and chatbots the ability to read repositories and code files, manage issues and PRs, analyze code, and automate work",
+  "path": "skills/imported/github-github-mcp-server/README.md",
+  "source_url": "https://raw.githubusercontent.com/github/github-mcp-server/HEAD/README.md",
+  "sha256": "0686b41067fd437abbde4b473c394fe2365e5ad2ae81c21b9f988735359c9666",
+  "missing_resources": [],
+  "license_file": "skills/imported/github-github-mcp-server/UPSTREAM_LICENSE"
+}

@@ -1,0 +1,6 @@
+Fonte didática sintética — não representa evidência científica real.
+
+Ao comparar métodos de regressão, devemos usar a mesma divisão de treino e teste,
+as mesmas métricas e múltiplas seeds. A baseline é definida antes da experiência.
+O erro médio e a variabilidade entre repetições devem ser reportados separadamente.
+Uma melhoria num conjunto de dados não demonstra generalização para outros domínios.

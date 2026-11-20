@@ -1,0 +1,18 @@
+{
+  "id": "brycewang-stanford-panel-data-analyst",
+  "reference": "brycewang-stanford/Auto-Empirical-Research-Skills/skills/43-wentorai-research-plugins/skills/analysis/econometrics/panel-data-analyst",
+  "repository": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills",
+  "kind": "skill",
+  "status": "imported",
+  "enabled": true,
+  "execution": "instructions_only",
+  "files": [
+    "SKILL.md"
+  ],
+  "description": "Expert panel data regression analysis with fixed effects and GMM",
+  "path": "skills/imported/brycewang-stanford-panel-data-analyst/SKILL.md",
+  "source_url": "https://raw.githubusercontent.com/brycewang-stanford/Auto-Empirical-Research-Skills/HEAD/skills/43-wentorai-research-plugins/skills/analysis/econometrics/panel-data-analyst/SKILL.md",
+  "sha256": "8574f67d0ab910f1b42fcde507f879f497d67c10ca998338310d2c4df6f8151d",
+  "missing_resources": [],
+  "license_file": "skills/imported/brycewang-stanford-panel-data-analyst/UPSTREAM_LICENSE"
+}

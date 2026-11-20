@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#15191b">
+  <title>Research Agent Factory — Laboratory</title>
+  <link rel="stylesheet" href="/static/lab.css">
+  <script type="module" src="/static/lab.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="rail" aria-label="Primary navigation">
+      <a href="/" class="brand" aria-label="Research Agent Factory home"><span class="brand-symbol">∑</span><span class="brand-wordmark">RAF<br><b>// 01</b></span></a>
+      <div class="rail-label">SYSTEM</div>
+      <nav id="navigation">
+        <button data-view="home" class="nav-item active"><span class="nav-number">01</span> Projects</button>
+        <button data-view="agents" class="nav-item"><span class="nav-number">02</span> Agents</button>
+        <button data-view="library" class="nav-item"><span class="nav-number">03</span> Skills</button>
+        <button data-view="mcps" class="nav-item"><span class="nav-number">04</span> MCP</button>
+      </nav>
+      <div class="rail-bottom"><div class="status-dot"></div><span>LOCAL</span><small>v0.2</small></div>
+    </aside>
+    <div class="page-frame">
+      <header class="topbar"><div class="breadcrumb" id="breadcrumb">FACTORY <span>/</span> PROJECTS</div><div class="top-actions"><span class="server-state"><i></i> ONLINE</span><button class="outline-button io-button" data-action="setup" title="Connections" aria-label="Connections">⌬</button><button class="outline-button" data-action="new-project">+ NEW</button></div></header>
+      <main id="main" tabindex="-1"></main>
+      <footer class="footer"><span>RAF // LOCAL</span><span>Q → RAG → AGENT</span><span>2026</span></footer>
+    </div>
+  </div>
+  <dialog id="project-dialog" class="modal terminal-modal"><form id="new-project-form"><div class="modal-head"><span class="kicker">NEW_PROJECT</span><button type="button" data-action="close-dialog" aria-label="Close" class="close-button">×</button></div><label>NAME<input name="name" maxlength="150" required placeholder="project_id"></label><label>QUERY<textarea name="question" rows="5" maxlength="10000" required placeholder="research question_"></textarea></label><input type="hidden" name="domain" value="general"><div class="modal-actions"><button type="button" class="text-button" data-action="close-dialog">ESC</button><button type="submit" class="primary-button">CREATE ↵</button></div></form></dialog>
+  <dialog id="setup-dialog" class="modal terminal-modal setup-modal"><div class="modal-head"><span class="kicker">I/O</span><button type="button" data-action="close-dialog" aria-label="Close" class="close-button">×</button></div><div id="setup-body"></div></dialog>
+  <dialog id="detail-dialog" class="modal detail-modal"><div class="modal-head"><span id="detail-title" class="kicker">DETAIL</span><button type="button" data-action="close-dialog" aria-label="Close" class="close-button">×</button></div><div id="detail-body"></div></dialog>
+  <div id="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "id": "foryourhealth111-pixel-evaluating-machine-learning-models",
+  "reference": "foryourhealth111-pixel/Vibe-Skills/bundled/skills/evaluating-machine-learning-models",
+  "repository": "https://github.com/foryourhealth111-pixel/Vibe-Skills",
+  "kind": "skill",
+  "status": "imported",
+  "enabled": true,
+  "execution": "instructions_only",
+  "files": [
+    "SKILL.md"
+  ],
+  "description": "|",
+  "path": "skills/imported/foryourhealth111-pixel-evaluating-machine-learning-models/SKILL.md",
+  "source_url": "https://raw.githubusercontent.com/foryourhealth111-pixel/Vibe-Skills/HEAD/bundled/skills/evaluating-machine-learning-models/SKILL.md",
+  "sha256": "29dd1c57e2ae537f01912b5a1f24c4509b98bb84f800ee49136f6da63f06f2f1",
+  "missing_resources": [],
+  "license_file": "skills/imported/foryourhealth111-pixel-evaluating-machine-learning-models/UPSTREAM_LICENSE"
+}

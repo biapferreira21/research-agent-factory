@@ -1,0 +1,18 @@
+{
+  "id": "shiyangzheng-scholarly",
+  "reference": "ShiyangZheng/scholarly",
+  "repository": "https://github.com/ShiyangZheng/scholarly",
+  "kind": "skill",
+  "status": "imported",
+  "enabled": true,
+  "execution": "instructions_only",
+  "files": [
+    "SKILL.md",
+    "references/academic_paper_templates.md"
+  ],
+  "description": "Academic paper and thesis writing assistant - Guides users through Q&A to progressively build all sections of a research paper (Introduction, Literature Review, Methods, Results, Discussion, Conclusion). Works with any AI agent framework (OpenClaw, Claude Code, Cursor, etc.). trigger_when: 用户要写学术论文、学位论文（本科/硕士/博士）、期刊文章、研究报告；或提到「论文大纲」「文献综述」「研究方法」「论文结构」「Abstract」「Introduction」「Method」「Results」「Discussion」等关键词。",
+  "path": "skills/imported/shiyangzheng-scholarly/SKILL.md",
+  "source_url": "https://raw.githubusercontent.com/ShiyangZheng/scholarly/HEAD/SKILL.md",
+  "sha256": "39b9d45a3c76a3892f5d3f6d53a612230c2248ec02fdd4638436a73b008e81e7",
+  "missing_resources": []
+}

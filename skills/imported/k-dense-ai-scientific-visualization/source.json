@@ -1,0 +1,31 @@
+{
+  "id": "k-dense-ai-scientific-visualization",
+  "reference": "K-Dense-AI/scientific-agent-skills/skills/scientific-visualization",
+  "repository": "https://github.com/K-Dense-AI/scientific-agent-skills",
+  "kind": "skill",
+  "status": "imported",
+  "enabled": true,
+  "execution": "instructions_only",
+  "files": [
+    "SKILL.md",
+    "assets/color_palettes.py",
+    "assets/publisher_profiles.json",
+    "references/color_palettes.md",
+    "references/journal_requirements.md",
+    "references/matplotlib_examples.md",
+    "references/publication_guidelines.md",
+    "references/sources.md",
+    "scripts/export_plan.py",
+    "scripts/figure_export.py",
+    "scripts/image_metadata.py",
+    "scripts/palette_audit.py",
+    "scripts/style_presets.py",
+    "scripts/style_preview.py"
+  ],
+  "description": "Create and audit truthful, accessible, publication-ready scientific figures with Matplotlib, Seaborn, or Plotly. Use for figure design, multi-panel layouts, uncertainty and missing-data displays, color/contrast review, image metadata validation, and journal export planning.",
+  "path": "skills/imported/k-dense-ai-scientific-visualization/SKILL.md",
+  "source_url": "https://raw.githubusercontent.com/K-Dense-AI/scientific-agent-skills/HEAD/skills/scientific-visualization/SKILL.md",
+  "sha256": "f7c7f9a2350ea02db2db55cd28921a54c74b089f6762f1b0b63a13b8f6eeec33",
+  "missing_resources": [],
+  "license_file": "skills/imported/k-dense-ai-scientific-visualization/UPSTREAM_LICENSE"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "nvidia-nvidia-skill-finder",
+  "reference": "NVIDIA/skills/plugins/nvidia-skills/skills/nvidia-skill-finder",
+  "repository": "https://github.com/NVIDIA/skills",
+  "kind": "skill",
+  "status": "imported",
+  "enabled": true,
+  "execution": "instructions_only",
+  "files": [
+    "SKILL.md",
+    "references/taxonomy-routing.md"
+  ],
+  "description": ">-",
+  "path": "skills/imported/nvidia-nvidia-skill-finder/SKILL.md",
+  "source_url": "https://raw.githubusercontent.com/NVIDIA/skills/HEAD/plugins/nvidia-skills/skills/nvidia-skill-finder/SKILL.md",
+  "sha256": "51fe4ff117f34919527ad4540513910e16eb225f7ad04686fbbe985035fdf9cf",
+  "missing_resources": []
+}

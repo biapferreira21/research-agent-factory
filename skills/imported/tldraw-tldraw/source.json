@@ -1,0 +1,18 @@
+{
+  "id": "tldraw-tldraw",
+  "reference": "tldraw/tldraw/io.github.tldraw/tldraw",
+  "repository": "https://github.com/tldraw/tldraw",
+  "kind": "mcp",
+  "status": "reference_only",
+  "enabled": false,
+  "execution": "instructions_only",
+  "files": [
+    "README.md"
+  ],
+  "description": "<div alt style=\"text-align: center; transform: scale(.25);\">\n\t<picture>\n\t\t<source media=\"(prefers-color-scheme: dark)\" srcset=\"https://github.com/tldraw/tldraw/raw/main/assets/github-hero-dark.png\" />\n\t\t<img alt=\"tldraw\" src=\"https://github.com/tldraw/tldraw/raw/main/assets/github-hero-light.png\" />\n\t</picture>\n</div>\n\n<p align=\"center\">\n  <a href=\"https://www.npmjs.com/package/tldraw\"><img src=\"h",
+  "path": "skills/imported/tldraw-tldraw/README.md",
+  "source_url": "https://raw.githubusercontent.com/tldraw/tldraw/HEAD/README.md",
+  "sha256": "1e35efa97844b08409feb26294c4eac533207057d7595e8e7d3b80cf1a333d5b",
+  "missing_resources": [],
+  "license_file": "skills/imported/tldraw-tldraw/UPSTREAM_LICENSE"
+}

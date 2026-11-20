@@ -1,0 +1,18 @@
+{
+  "id": "brycewang-stanford-topology-data-analysis",
+  "reference": "brycewang-stanford/Auto-Empirical-Research-Skills/skills/43-wentorai-research-plugins/skills/domains/math/topology-data-analysis",
+  "repository": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills",
+  "kind": "skill",
+  "status": "imported",
+  "enabled": true,
+  "execution": "instructions_only",
+  "files": [
+    "SKILL.md"
+  ],
+  "description": "Topological data analysis: persistent homology, Mapper, and TDA tools",
+  "path": "skills/imported/brycewang-stanford-topology-data-analysis/SKILL.md",
+  "source_url": "https://raw.githubusercontent.com/brycewang-stanford/Auto-Empirical-Research-Skills/HEAD/skills/43-wentorai-research-plugins/skills/domains/math/topology-data-analysis/SKILL.md",
+  "sha256": "0a8f6645f8650dcbd8e9464fbb895468982d30ee6c228a9cb9ee2a88d036edbe",
+  "missing_resources": [],
+  "license_file": "skills/imported/brycewang-stanford-topology-data-analysis/UPSTREAM_LICENSE"
+}

@@ -1,0 +1,7 @@
+[
+  {"name": "baseline_global", "query": "baseline", "expected_sources": ["global.md"]},
+  {"name": "seeds_domain", "query": "seeds", "domain": "statistics", "expected_sources": ["statistics.md"]},
+  {"name": "project_error", "query": "erro", "project": "a", "expected_sources": ["project_a.md"]},
+  {"name": "project_hidden", "query": "erro", "expected_sources": []},
+  {"name": "unknown_term", "query": "termo_inexistente", "expected_sources": []}
+]

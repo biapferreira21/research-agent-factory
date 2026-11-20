@@ -1,0 +1,19 @@
+{
+  "id": "openosint-openosint",
+  "reference": "OpenOSINT/OpenOSINT/io.github.OpenOSINT/openosint",
+  "repository": "https://github.com/OpenOSINT/OpenOSINT",
+  "kind": "mcp",
+  "status": "reference_only",
+  "enabled": false,
+  "execution": "instructions_only",
+  "files": [
+    "README.md",
+    "scripts/record-demo/README.md"
+  ],
+  "description": "mcp-name: io.github.OpenOSINT/openosint\n\n<div align=\"center\">\n  <img src=\"https://raw.githubusercontent.com/OpenOSINT/OpenOSINT/main/docs/logo.svg\" alt=\"OpenOSINT\" width=\"200\" />\n  <h1>OpenOSINT</h1>\n  <p>An OSINT (Open Source Intelligence) agent for security researchers and analysts: 20 investigation tools behind a natural-language interface, plus an MCP (Model Context Protocol) server so any MCP",
+  "path": "skills/imported/openosint-openosint/README.md",
+  "source_url": "https://raw.githubusercontent.com/OpenOSINT/OpenOSINT/HEAD/README.md",
+  "sha256": "d69c3f2b19df0bd949a102055647aeefb069d2da24ac6bd1bad385f8885aacc0",
+  "missing_resources": [],
+  "license_file": "skills/imported/openosint-openosint/UPSTREAM_LICENSE"
+}

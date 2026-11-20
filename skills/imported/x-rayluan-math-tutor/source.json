@@ -1,0 +1,17 @@
+{
+  "id": "x-rayluan-math-tutor",
+  "reference": "X-RayLuan/awesome-ceo-stack/ceo-skill/Openclaw-Study-Coach/.claude/skills/math-tutor",
+  "repository": "https://github.com/X-RayLuan/awesome-ceo-stack",
+  "kind": "skill",
+  "status": "imported",
+  "enabled": true,
+  "execution": "instructions_only",
+  "files": [
+    "SKILL.md"
+  ],
+  "description": "数学全场景辅导(K-12)。K-3 口算 + 应用题启蒙;4-6 应用题 + 分数 + 小数 + 几何;7-9 代数 + 方程 + 函数 + 几何证明 + 概率;10-12 函数 + 解析几何 + 导数 + 概率统计 + 综合压轴。计算题走 calculation-method 5 步法。1-9 年级一次只给一道,10-12 可以一次给一组。当孩子或家长发来数学题、说\"数学不会\"、或题目含数字/方程/图形时使用。",
+  "path": "skills/imported/x-rayluan-math-tutor/SKILL.md",
+  "source_url": "https://raw.githubusercontent.com/X-RayLuan/awesome-ceo-stack/HEAD/ceo-skill/Openclaw-Study-Coach/.claude/skills/math-tutor/SKILL.md",
+  "sha256": "8dba1c716c5bbbfabfadef2a692e3c43fdfffe7bec0e1738a51cc02b98af7695",
+  "missing_resources": []
+}

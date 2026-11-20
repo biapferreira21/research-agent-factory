@@ -1,0 +1,17 @@
+{
+  "id": "ecnu-icalk-math-practice-game",
+  "reference": "ECNU-ICALK/AutoSkill/SkillBank/ConvSkill/english_gpt3.5_8_GLM4.7/math-practice-game",
+  "repository": "https://github.com/ECNU-ICALK/AutoSkill",
+  "kind": "skill",
+  "status": "imported",
+  "enabled": true,
+  "execution": "instructions_only",
+  "files": [
+    "SKILL.md"
+  ],
+  "description": "Generates random math problems with 2 or 3 numbers and validates user answers by explicitly stating if they are correct or incorrect.",
+  "path": "skills/imported/ecnu-icalk-math-practice-game/SKILL.md",
+  "source_url": "https://raw.githubusercontent.com/ECNU-ICALK/AutoSkill/HEAD/SkillBank/ConvSkill/english_gpt3.5_8_GLM4.7/math-practice-game/SKILL.md",
+  "sha256": "e82f24798118710eb231d7004231efddf344b44f9982bef5b1e3441f11de40fb",
+  "missing_resources": []
+}

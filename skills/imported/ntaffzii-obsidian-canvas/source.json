@@ -1,0 +1,18 @@
+{
+  "id": "ntaffzii-obsidian-canvas",
+  "reference": "ntaffzii/Skill-Agents/skills/obsidian/obsidian-canvas",
+  "repository": "https://github.com/ntaffzii/Skill-Agents",
+  "kind": "skill",
+  "status": "imported",
+  "enabled": true,
+  "execution": "instructions_only",
+  "files": [
+    "SKILL.md"
+  ],
+  "description": "Create and edit Obsidian JSON Canvas .canvas files with nodes, edges, groups, colors, links, files, and spatial layouts. Use when the user asks for an Obsidian canvas, visual map, knowledge graph, board, flow, or .canvas file.",
+  "path": "skills/imported/ntaffzii-obsidian-canvas/SKILL.md",
+  "source_url": "https://raw.githubusercontent.com/ntaffzii/Skill-Agents/HEAD/skills/obsidian/obsidian-canvas/SKILL.md",
+  "sha256": "4309ae49d65a96d2a0dfa0145b3a5b610af652d006741ea3d4e19896e97ce1a6",
+  "missing_resources": [],
+  "license_file": "skills/imported/ntaffzii-obsidian-canvas/UPSTREAM_LICENSE"
+}

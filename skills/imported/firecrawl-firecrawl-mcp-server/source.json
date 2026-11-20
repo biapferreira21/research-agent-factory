@@ -1,0 +1,18 @@
+{
+  "id": "firecrawl-firecrawl-mcp-server",
+  "reference": "firecrawl/firecrawl-mcp-server/io.github.firecrawl/firecrawl-mcp-server",
+  "repository": "https://github.com/firecrawl/firecrawl-mcp-server",
+  "kind": "mcp",
+  "status": "reference_only",
+  "enabled": false,
+  "execution": "instructions_only",
+  "files": [
+    "README.md"
+  ],
+  "description": "<div align=\"center\">\n  <a name=\"readme-top\"></a>\n  <img\n    src=\"https://raw.githubusercontent.com/firecrawl/firecrawl-mcp-server/main/img/fire.png\"\n    height=\"140\"\n  >\n</div>\n\n# Firecrawl MCP Server\n\nA Model Context Protocol (MCP) server that brings [Firecrawl](https://github.com/firecrawl/firecrawl) to MCP-compatible AI agents — search, scrape, and interact with the live web for clean, agent-re",
+  "path": "skills/imported/firecrawl-firecrawl-mcp-server/README.md",
+  "source_url": "https://raw.githubusercontent.com/firecrawl/firecrawl-mcp-server/HEAD/README.md",
+  "sha256": "65a4a94e1be7c6253b15e574ec4aefa9ce21f10035de6600fe3f0caacca42785",
+  "missing_resources": [],
+  "license_file": "skills/imported/firecrawl-firecrawl-mcp-server/UPSTREAM_LICENSE"
+}

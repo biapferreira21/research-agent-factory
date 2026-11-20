@@ -1,0 +1,13 @@
+include README.md
+include DEPLOYMENT.md
+include SDK.md
+include SECURITY.md
+include .env.example
+recursive-include app/static *.html *.css *.js *.png *.txt
+recursive-include config *.json
+recursive-include skills *.md *.json *.py *.txt
+prune data
+prune generated_agents
+prune .venv
+prune .git
+global-exclude .env credentials.env local_settings.json *.sqlite3 *.log *.pyc

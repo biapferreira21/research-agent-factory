@@ -1,0 +1,21 @@
+{
+  "id": "deveshpunjabi-3d-website-architect",
+  "reference": "deveshpunjabi/3d-website-skill/skills/3d-website-architect",
+  "repository": "https://github.com/deveshpunjabi/3d-website-skill",
+  "kind": "skill",
+  "status": "imported",
+  "enabled": true,
+  "execution": "instructions_only",
+  "files": [
+    "SKILL.md",
+    "references/3d-integration.md",
+    "references/animation-patterns.md",
+    "references/design-systems.md"
+  ],
+  "description": ">",
+  "path": "skills/imported/deveshpunjabi-3d-website-architect/SKILL.md",
+  "source_url": "https://raw.githubusercontent.com/deveshpunjabi/3d-website-skill/HEAD/skills/3d-website-architect/SKILL.md",
+  "sha256": "687be118d7e41dd2a4df53e7c5c01081c86312045954538322010c34ed1b997f",
+  "missing_resources": [],
+  "license_file": "skills/imported/deveshpunjabi-3d-website-architect/UPSTREAM_LICENSE"
+}

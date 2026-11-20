@@ -1,0 +1,18 @@
+{
+  "id": "agentscope-ai-bib-verify",
+  "reference": "agentscope-ai/OpenJudge/skills/bib-verify",
+  "repository": "https://github.com/agentscope-ai/OpenJudge",
+  "kind": "skill",
+  "status": "reference_only",
+  "enabled": false,
+  "execution": "instructions_only",
+  "files": [
+    "README.md"
+  ],
+  "description": "<div align=\"center\">\n\n<img src=\"./docs/images/logo.svg\" alt=\"Open-Judge Logo\" width=\"500\">\n\n<br/>\n\n<h3>\n  <em>Holistic Evaluation, Quality Rewards: Driving Application Excellence</em>\n</h3>\n\n<p>\n  🌟 <em>If you find OpenJudge helpful, please give us a <b>Star</b>!</em> 🌟\n</p>\n\n[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue?logo=python)](https://pypi.org/project/py-openjudge/)\n[![Py",
+  "path": "skills/imported/agentscope-ai-bib-verify/README.md",
+  "source_url": "https://raw.githubusercontent.com/agentscope-ai/OpenJudge/HEAD/README.md",
+  "sha256": "cb5f0d358c4dbd8e1cec1633081bb8a93af7d4b5ba6bc5ed815364c90389b7fe",
+  "missing_resources": [],
+  "license_file": "skills/imported/agentscope-ai-bib-verify/UPSTREAM_LICENSE"
+}

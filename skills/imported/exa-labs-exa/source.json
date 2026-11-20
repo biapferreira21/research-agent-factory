@@ -1,0 +1,18 @@
+{
+  "id": "exa-labs-exa",
+  "reference": "exa-labs/exa-mcp-server/ai.exa/exa",
+  "repository": "https://github.com/exa-labs/exa-mcp-server",
+  "kind": "mcp",
+  "status": "reference_only",
+  "enabled": false,
+  "execution": "instructions_only",
+  "files": [
+    "README.md"
+  ],
+  "description": "<h1 align=\"center\">\n  <img src=\"assets/Exa.svg\" alt=\"Exa\" width=\"64\" />\n  <br>\n  Exa MCP Server\n</h1>\n\n<p align=\"center\">Connect AI agents to Exa for web search, content fetching, and multi-step research.</p>\n\n<p align=\"center\">\n  <a href=\"https://cursor.com/en/install-mcp?name=exa&config=eyJ1cmwiOiJodHRwczovL21jcC5leGEuYWkvbWNwIn0=\"><img src=\"https://custom-icon-badges.demolab.com/badge/Install_i",
+  "path": "skills/imported/exa-labs-exa/README.md",
+  "source_url": "https://raw.githubusercontent.com/exa-labs/exa-mcp-server/HEAD/README.md",
+  "sha256": "08a2ffb7efbfd07dbadac74435f8cabb2a265cc3389dfcc4a3303b42c21a934f",
+  "missing_resources": [],
+  "license_file": "skills/imported/exa-labs-exa/UPSTREAM_LICENSE"
+}

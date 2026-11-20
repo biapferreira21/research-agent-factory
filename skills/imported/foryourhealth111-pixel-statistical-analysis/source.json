@@ -1,0 +1,24 @@
+{
+  "id": "foryourhealth111-pixel-statistical-analysis",
+  "reference": "foryourhealth111-pixel/Vibe-Skills/bundled/skills/statistical-analysis",
+  "repository": "https://github.com/foryourhealth111-pixel/Vibe-Skills",
+  "kind": "skill",
+  "status": "imported",
+  "enabled": true,
+  "execution": "instructions_only",
+  "files": [
+    "SKILL.md",
+    "references/assumptions_and_diagnostics.md",
+    "references/bayesian_statistics.md",
+    "references/effect_sizes_and_power.md",
+    "references/reporting_standards.md",
+    "references/test_selection_guide.md",
+    "scripts/assumption_checks.py"
+  ],
+  "description": "Statistical analysis toolkit. Hypothesis tests (t-test, ANOVA, chi-square), regression, correlation, Bayesian stats, power analysis, assumption checks, APA reporting, for academic research.",
+  "path": "skills/imported/foryourhealth111-pixel-statistical-analysis/SKILL.md",
+  "source_url": "https://raw.githubusercontent.com/foryourhealth111-pixel/Vibe-Skills/HEAD/bundled/skills/statistical-analysis/SKILL.md",
+  "sha256": "d285531413cef3fafcf3025fe6cdb1d6e8fe54a62468c7f7f29522e869d5157f",
+  "missing_resources": [],
+  "license_file": "skills/imported/foryourhealth111-pixel-statistical-analysis/UPSTREAM_LICENSE"
+}

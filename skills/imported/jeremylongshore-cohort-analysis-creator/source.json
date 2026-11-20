@@ -1,0 +1,18 @@
+{
+  "id": "jeremylongshore-cohort-analysis-creator",
+  "reference": "jeremylongshore/claude-code-plugins-plus-skills/skills/12-data-analytics/cohort-analysis-creator",
+  "repository": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills",
+  "kind": "skill",
+  "status": "imported",
+  "enabled": true,
+  "execution": "instructions_only",
+  "files": [
+    "SKILL.md"
+  ],
+  "description": "Create cohort analysis creator operations. Auto-activating skill for",
+  "path": "skills/imported/jeremylongshore-cohort-analysis-creator/SKILL.md",
+  "source_url": "https://raw.githubusercontent.com/jeremylongshore/claude-code-plugins-plus-skills/HEAD/skills/12-data-analytics/cohort-analysis-creator/SKILL.md",
+  "sha256": "f86d25bca0a9f7564615abedd972bf20b8fc426419f8ac21968eba6c48afea46",
+  "missing_resources": [],
+  "license_file": "skills/imported/jeremylongshore-cohort-analysis-creator/UPSTREAM_LICENSE"
+}

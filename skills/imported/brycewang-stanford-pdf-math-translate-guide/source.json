@@ -1,0 +1,18 @@
+{
+  "id": "brycewang-stanford-pdf-math-translate-guide",
+  "reference": "brycewang-stanford/Auto-Empirical-Research-Skills/skills/43-wentorai-research-plugins/skills/tools/ocr-translate/pdf-math-translate-guide",
+  "repository": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills",
+  "kind": "skill",
+  "status": "imported",
+  "enabled": true,
+  "execution": "instructions_only",
+  "files": [
+    "SKILL.md"
+  ],
+  "description": "Translate scientific PDFs with preserved math formatting via PDFMathTranslate",
+  "path": "skills/imported/brycewang-stanford-pdf-math-translate-guide/SKILL.md",
+  "source_url": "https://raw.githubusercontent.com/brycewang-stanford/Auto-Empirical-Research-Skills/HEAD/skills/43-wentorai-research-plugins/skills/tools/ocr-translate/pdf-math-translate-guide/SKILL.md",
+  "sha256": "9a9b206e48c43536c257ea1c132530d22432c2fa425561e3cea1d4fcecc91b91",
+  "missing_resources": [],
+  "license_file": "skills/imported/brycewang-stanford-pdf-math-translate-guide/UPSTREAM_LICENSE"
+}

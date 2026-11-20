@@ -1,0 +1,25 @@
+{
+  "id": "shanraisshan-agent-browser",
+  "reference": "shanraisshan/claude-code-best-practice/.claude/skills/agent-browser",
+  "repository": "https://github.com/shanraisshan/claude-code-best-practice",
+  "kind": "skill",
+  "status": "imported",
+  "enabled": true,
+  "execution": "instructions_only",
+  "files": [
+    "SKILL.md"
+  ],
+  "description": "Browser automation CLI for AI agents. Use when the user needs to interact with websites, including navigating pages, filling forms, clicking buttons, taking screenshots, extracting data, testing web apps, or automating any browser task. Triggers include requests to \"open a website\", \"fill out a form\", \"click a button\", \"take a screenshot\", \"scrape data from a page\", \"test this web app\", \"login to a site\", \"automate browser actions\", or any task requiring programmatic web interaction.",
+  "path": "skills/imported/shanraisshan-agent-browser/SKILL.md",
+  "source_url": "https://raw.githubusercontent.com/shanraisshan/claude-code-best-practice/HEAD/.claude/skills/agent-browser/SKILL.md",
+  "sha256": "84effb42371bac499123843088fe4304d8b7c5de765722e3ad92cc0f7cc68557",
+  "missing_resources": [
+    "references/authentication.md",
+    "references/commands.md",
+    "references/proxy-support.md",
+    "references/session-management.md",
+    "references/snapshot-refs.md",
+    "references/video-recording.md"
+  ],
+  "license_file": "skills/imported/shanraisshan-agent-browser/UPSTREAM_LICENSE"
+}

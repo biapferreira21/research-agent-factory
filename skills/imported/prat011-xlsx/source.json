@@ -1,0 +1,17 @@
+{
+  "id": "prat011-xlsx",
+  "reference": "Prat011/awesome-llm-skills/document-skills/xlsx",
+  "repository": "https://github.com/Prat011/awesome-llm-skills",
+  "kind": "skill",
+  "status": "imported",
+  "enabled": true,
+  "execution": "instructions_only",
+  "files": [
+    "SKILL.md"
+  ],
+  "description": "Comprehensive spreadsheet creation, editing, and analysis with support for formulas, formatting, data analysis, and visualization. When Claude needs to work with spreadsheets (.xlsx, .xlsm, .csv, .tsv, etc) for: (1) Creating new spreadsheets with formulas and formatting, (2) Reading or analyzing data, (3) Modify existing spreadsheets while preserving formulas, (4) Data analysis and visualization in spreadsheets, or (5) Recalculating formulas",
+  "path": "skills/imported/prat011-xlsx/SKILL.md",
+  "source_url": "https://raw.githubusercontent.com/Prat011/awesome-llm-skills/HEAD/document-skills/xlsx/SKILL.md",
+  "sha256": "020ccdb5932257b66c638ec1157ea248d57fa52c8c01f1f68b559b5970c7df35",
+  "missing_resources": []
+}

@@ -1,0 +1,23 @@
+{
+  "id": "k-dense-ai-statistical-power",
+  "reference": "K-Dense-AI/scientific-agent-skills/skills/statistical-power",
+  "repository": "https://github.com/K-Dense-AI/scientific-agent-skills",
+  "kind": "skill",
+  "status": "imported",
+  "enabled": true,
+  "execution": "instructions_only",
+  "files": [
+    "SKILL.md",
+    "references/closed_form_recipes.md",
+    "references/effect_sizes.md",
+    "references/simulation_based_power.md",
+    "scripts/power.py",
+    "scripts/simulate_power.py"
+  ],
+  "description": "Sample-size and statistical power calculations for planning studies. Use whenever someone asks \"how many subjects/samples/replicates do I need\", wants an a priori power analysis, a minimum detectable effect (MDE), a power curve, or needs to justify a sample size for a grant, IRB protocol, or pre-registration. Covers closed-form power for t-tests, ANOVA, proportions, correlations, chi-square, and regression, plus simulation-based (Monte Carlo) power for designs with no formula — logistic/Poisson regression, mixed models, cluster-randomized trials, survival, and interactions. Use this skill even when the request only mentions an effect size, alpha, or \"80% power\" without saying \"power analysis",
+  "path": "skills/imported/k-dense-ai-statistical-power/SKILL.md",
+  "source_url": "https://raw.githubusercontent.com/K-Dense-AI/scientific-agent-skills/HEAD/skills/statistical-power/SKILL.md",
+  "sha256": "51ca6017ecaf5a6ec427d80f511063f570a983785399eedbd24c6fc4b9fd12f5",
+  "missing_resources": [],
+  "license_file": "skills/imported/k-dense-ai-statistical-power/UPSTREAM_LICENSE"
+}

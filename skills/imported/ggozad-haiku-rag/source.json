@@ -1,0 +1,18 @@
+{
+  "id": "ggozad-haiku-rag",
+  "reference": "ggozad/haiku.rag/io.github.ggozad/haiku-rag",
+  "repository": "https://github.com/ggozad/haiku.rag",
+  "kind": "mcp",
+  "status": "reference_only",
+  "enabled": false,
+  "execution": "instructions_only",
+  "files": [
+    "README.md"
+  ],
+  "description": "# haiku.rag\n\n[![PyPI](https://img.shields.io/pypi/v/haiku.rag)](https://pypi.org/project/haiku.rag/)\n[![Python](https://img.shields.io/pypi/pyversions/haiku.rag)](https://pypi.org/project/haiku.rag/)\n[![Downloads](https://static.pepy.tech/badge/haiku-rag-slim/month)](https://pepy.tech/projects/haiku-rag-slim)\n[![Docs](https://img.shields.io/badge/docs-ggozad.github.io-blue)](https://ggozad.github.",
+  "path": "skills/imported/ggozad-haiku-rag/README.md",
+  "source_url": "https://raw.githubusercontent.com/ggozad/haiku.rag/HEAD/README.md",
+  "sha256": "818208eafad646ac46ce33eb920a889f2af4ccf01c0a80537fee9b3aa5c3ecd1",
+  "missing_resources": [],
+  "license_file": "skills/imported/ggozad-haiku-rag/UPSTREAM_LICENSE"
+}

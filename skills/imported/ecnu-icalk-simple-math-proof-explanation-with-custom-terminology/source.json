@@ -1,0 +1,17 @@
+{
+  "id": "ecnu-icalk-simple-math-proof-explanation-with-custom-terminology",
+  "reference": "ECNU-ICALK/AutoSkill/SkillBank/ConvSkill/english_gpt3.5_8_GLM4.7/simple-math-proof-explanation-with-custom-terminology",
+  "repository": "https://github.com/ECNU-ICALK/AutoSkill",
+  "kind": "skill",
+  "status": "imported",
+  "enabled": true,
+  "execution": "instructions_only",
+  "files": [
+    "SKILL.md"
+  ],
+  "description": "Explain mathematical proofs regarding primes and irrationality using simple language, custom terminology ('whole-divisible'), and specific notation (Unicode superscript ²), while avoiding complex factorization.",
+  "path": "skills/imported/ecnu-icalk-simple-math-proof-explanation-with-custom-terminology/SKILL.md",
+  "source_url": "https://raw.githubusercontent.com/ECNU-ICALK/AutoSkill/HEAD/SkillBank/ConvSkill/english_gpt3.5_8_GLM4.7/simple-math-proof-explanation-with-custom-terminology/SKILL.md",
+  "sha256": "0a75e68489918efe1a0928580e31e915b7394a137563400878c3140e2744c512",
+  "missing_resources": []
+}

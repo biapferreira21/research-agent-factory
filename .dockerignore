@@ -1,0 +1,15 @@
+.git
+.gitignore
+.venv
+.env
+.pytest_cache
+**/__pycache__
+**/*.pyc
+data
+generated_agents
+dist
+build
+*.egg-info
+.vendor
+tests
+work

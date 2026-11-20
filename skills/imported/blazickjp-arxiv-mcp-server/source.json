@@ -1,0 +1,18 @@
+{
+  "id": "blazickjp-arxiv-mcp-server",
+  "reference": "blazickjp/arxiv-mcp-server/io.github.blazickjp/arxiv-mcp-server",
+  "repository": "https://github.com/blazickjp/arxiv-mcp-server",
+  "kind": "mcp",
+  "status": "reference_only",
+  "enabled": false,
+  "execution": "instructions_only",
+  "files": [
+    "README.md"
+  ],
+  "description": "# arxiv-mcp-server\n\n<!-- mcp-name: io.github.blazickjp/arxiv-mcp-server -->\n\n[![PyPI](https://img.shields.io/pypi/v/arxiv-mcp-server.svg)](https://pypi.org/project/arxiv-mcp-server/)\n[![Downloads](https://static.pepy.tech/badge/arxiv-mcp-server)](https://pypi.org/project/arxiv-mcp-server/)\n[![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)\n[![MCP Registry](https://img",
+  "path": "skills/imported/blazickjp-arxiv-mcp-server/README.md",
+  "source_url": "https://raw.githubusercontent.com/blazickjp/arxiv-mcp-server/HEAD/README.md",
+  "sha256": "438a92cea968575e9c172c042958a7dd6c6b4655e4bd0ef37171d7e0a98f5871",
+  "missing_resources": [],
+  "license_file": "skills/imported/blazickjp-arxiv-mcp-server/UPSTREAM_LICENSE"
+}

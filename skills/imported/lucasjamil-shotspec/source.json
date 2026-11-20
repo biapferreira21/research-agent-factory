@@ -1,0 +1,21 @@
+{
+  "id": "lucasjamil-shotspec",
+  "reference": "lucasjamil/shotspec",
+  "repository": "https://github.com/lucasjamil/shotspec",
+  "kind": "skill",
+  "status": "imported",
+  "enabled": true,
+  "execution": "instructions_only",
+  "files": [
+    "SKILL.md",
+    "references/design-spec.md",
+    "references/examples.md",
+    "references/templates.md"
+  ],
+  "description": "Convert a screenshot of a website, app, or social media post into clean, structured Markdown optimized for feeding to LLMs. Works in two modes. CONTENT mode turns a tweet, post, thread, chat, article, or dashboard into faithful machine-readable text for use as LLM context. DESIGN mode turns a screenshot of a good-looking site or app into a precise design spec covering colors, typography, spacing, layout, components, and imagery style, so an LLM can rebuild the UI in that style instead of guessing from a raw image. Use this skill whenever the user uploads an image of a web page, app UI, dashboard, or social post and wants it turned into Markdown, including phrasings like \"make this into markd",
+  "path": "skills/imported/lucasjamil-shotspec/SKILL.md",
+  "source_url": "https://raw.githubusercontent.com/lucasjamil/shotspec/HEAD/SKILL.md",
+  "sha256": "e8889448cbe69415f2fb97a964ff65277cb2fdfa36086e156e551dcd2fa1ed8c",
+  "missing_resources": [],
+  "license_file": "skills/imported/lucasjamil-shotspec/UPSTREAM_LICENSE"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "mn755-mission-control-creative-web-artifacts",
+  "reference": "MN755/Codex-Mission_Control/plugins/mission-control/skills/mission-control-creative-web-artifacts",
+  "repository": "https://github.com/MN755/Codex-Mission_Control",
+  "kind": "skill",
+  "status": "imported",
+  "enabled": true,
+  "execution": "instructions_only",
+  "files": [
+    "SKILL.md"
+  ],
+  "description": "Plan creative web artifacts, themed pages, demos, and visual prototypes through Mission Control while preserving project guardrails and validation.",
+  "path": "skills/imported/mn755-mission-control-creative-web-artifacts/SKILL.md",
+  "source_url": "https://raw.githubusercontent.com/MN755/Codex-Mission_Control/HEAD/plugins/mission-control/skills/mission-control-creative-web-artifacts/SKILL.md",
+  "sha256": "5f55814e30bd2d4234c8c053aa034a3162856584bd8bd778b164f99bf5b857c0",
+  "missing_resources": [],
+  "license_file": "skills/imported/mn755-mission-control-creative-web-artifacts/UPSTREAM_LICENSE"
+}
