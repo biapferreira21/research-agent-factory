@@ -16,7 +16,9 @@ def create_planner_agent():
         model=get_model(),
         tools=[],
         system_prompt=PLANNER_PROMPT,
-        response_format=ToolStrategy(AgentSpec),
+        # One invalid structured reply must fall back through the harness,
+        # rather than letting LangChain retry until the project stays locked.
+        response_format=ToolStrategy(AgentSpec, handle_errors=False),
     )
 
 def create_agent_spec(requirement: str) -> AgentSpec:

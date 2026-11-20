@@ -61,6 +61,19 @@ def test_disabled_models_and_routers_are_not_implicitly_approved():
     assert len(registry.candidates(ModelRequirements(allow_router=True))) == 1
 
 
+@pytest.mark.parametrize("model", ["openrouter/free", "vendor/model:free", "vendor/zero-price"])
+def test_free_models_are_rejected_even_when_enabled(model):
+    pricing = ModelPricing(
+        input_usd_per_million="0", output_usd_per_million="0",
+        source="test", checked_on=date.today(),
+    )
+    registry = ModelRegistry(models=(make_entry(model=model, pricing=pricing),))
+
+    assert registry.candidates(ModelRequirements(allow_router=True)) == []
+    with pytest.raises(RegistryError, match="Apenas modelos pagos"):
+        registry.require("openrouter", model, ModelRequirements(allow_router=True))
+
+
 @pytest.mark.parametrize("requirements", [
     ModelRequirements(structured_output=True), ModelRequirements(provider="openai"),
     ModelRequirements(min_context_tokens=10001), ModelRequirements(max_reservation_usd="0.027"),

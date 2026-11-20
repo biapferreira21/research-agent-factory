@@ -224,8 +224,9 @@ class BuilderHarness:
             require_answered_question(question)
         with telemetry.stage(BuildStage.RESEARCH_PROTOCOL):
             if self.allow_semantic_fallbacks:
-                # The free router is not reliable enough for the protocol
-                # contract: it may invent open questions or mutate constraints.
+                # A model-generated protocol may invent open questions or
+                # mutate constraints. The deterministic contract keeps live
+                # builds bounded and reproducible.
                 # Use a conservative, fully validated protocol and keep the
                 # provider call for the architect/build stages where it adds
                 # useful implementation detail.
@@ -373,8 +374,8 @@ class BuilderHarness:
                     except CapabilityBlocked:
                         if not self.allow_semantic_fallbacks:
                             raise
-                        # A free router can invent an MCP capability name that
-                        # is absent from the approved local catalogue. Rebuild
+                        # A model can invent an MCP capability name that is
+                        # absent from the approved local catalogue. Rebuild
                         # the spec from the validated protocol so the agent
                         # stays executable and bounded by the factory runtime.
                         spec = fallback_agent_spec(

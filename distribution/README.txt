@@ -1,4 +1,4 @@
-RESEARCH AGENT FACTORY // KIT 0.1.1
+RESEARCH AGENT FACTORY // KIT 0.1.2
 
 WINDOWS
 
@@ -26,7 +26,7 @@ See SDK.md for a complete example.
 MACOS / LINUX
 
     python3 -m venv .venv
-    .venv/bin/python -m pip install packages/research_agent_factory-0.1.1-py3-none-any.whl
+    .venv/bin/python -m pip install packages/research_agent_factory-0.1.2-py3-none-any.whl
     .venv/bin/python -m app serve --host 127.0.0.1 --port 8765 --data data
 
 Then open http://127.0.0.1:8765/.

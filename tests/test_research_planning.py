@@ -26,6 +26,22 @@ def test_empty_question_does_not_construct_model(monkeypatch):
         planning.formalize_research_question("  ")
 
 
+def test_structured_research_planners_do_not_retry_invalid_responses(monkeypatch):
+    captured = []
+    monkeypatch.setattr(planning, "get_model", lambda: object())
+    monkeypatch.setattr(
+        planning,
+        "create_agent",
+        lambda **kwargs: captured.append(kwargs["response_format"]) or object(),
+    )
+
+    planning.create_question_formalizer()
+    planning.create_research_planner()
+
+    assert len(captured) == 2
+    assert all(strategy.handle_errors is False for strategy in captured)
+
+
 def test_planner_receives_complete_question(monkeypatch):
     protocol = create_example_protocol()
     class Fake:

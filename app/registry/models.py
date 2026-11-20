@@ -62,6 +62,16 @@ class RegisteredModel(RegistryRecord):
         # Evita fingir que uma contagem local de strings inclui schemas de tools.
         return self.pricing.estimate(self.context_window, self.max_output_tokens)
 
+    def is_free(self) -> bool:
+        """Reject free endpoints even if a catalogue entry is accidentally enabled."""
+        identifier = self.model.casefold()
+        zero_priced = (
+            self.pricing.input_usd_per_million == 0
+            and self.pricing.output_usd_per_million == 0
+            and self.pricing.request_usd == 0
+        )
+        return identifier == "openrouter/free" or identifier.endswith(":free") or zero_priced
+
 
 class ModelRequirements(RegistryRecord):
     provider: Literal["openai", "openrouter"] | None = None
@@ -90,7 +100,7 @@ class ModelRegistry(RegistryRecord):
     def candidates(self, requirements: ModelRequirements, *, today: date | None = None) -> list[RegisteredModel]:
         result = []
         for entry in self.models:
-            if not entry.enabled or not entry.pricing.is_current(today):
+            if not entry.enabled or entry.is_free() or not entry.pricing.is_current(today):
                 continue
             if requirements.provider is not None and entry.provider != requirements.provider:
                 continue
@@ -112,5 +122,5 @@ class ModelRegistry(RegistryRecord):
             if entry.provider == provider and entry.model == model:
                 return entry
         raise RegistryError(
-            f"Modelo não elegível: {provider}/{model}. Verifica aprovação, capacidades, router e validade dos preços."
+            f"Modelo não elegível: {provider}/{model}. Apenas modelos pagos, nomeados, aprovados e com preços atuais são permitidos."
         )

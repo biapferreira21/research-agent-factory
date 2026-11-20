@@ -18,7 +18,7 @@ Abre **http://127.0.0.1:8765**. Para instalar noutro ambiente, usa Python 3.12 o
 
 ## Kit para partilha
 
-O ficheiro `dist/research-agent-factory-kit-0.1.1.zip` pode ser enviado diretamente. Depois de extrair, um utilizador Windows executa **Install Agent Factory.cmd** uma vez e **Start Agent Factory.cmd** para abrir o harness. Cada pessoa liga as suas próprias chaves no painel **I/O**. Ao publicar uma tag Git `v*`, o workflow `publish-kit` cria automaticamente uma GitHub Release com o ZIP e o wheel para download.
+O ficheiro `dist/research-agent-factory-kit-0.1.2.zip` pode ser enviado diretamente. Depois de extrair, um utilizador Windows executa **Install Agent Factory.cmd** uma vez e **Start Agent Factory.cmd** para abrir o harness. Cada pessoa liga as suas próprias chaves no painel **I/O**. Ao publicar uma tag Git `v*`, o workflow `publish-kit` cria automaticamente uma GitHub Release com o ZIP e o wheel para download.
 
 ## Percurso na interface
 
@@ -35,8 +35,8 @@ O ficheiro `dist/research-agent-factory-kit-0.1.1.zip` pode ser enviado diretame
 
 Liga OpenRouter ou OpenAI no painel **I/O**. As chaves ficam em `data/credentials.env`, nunca são devolvidas pela API e estão excluídas do Git e dos pacotes. O `.env`, usando `.env.example` como referência, continua disponível como alternativa para desenvolvimento. Nunca coloques chaves em documentos ou código gerado. O diagnóstico `python -m app doctor` apenas mostra se existe uma chave, não o valor.
 
-- Modelo padrão: `openrouter/free`, exceção explícita para o router gratuito. O seletor também oferece modelos nomeados gratuitos, rápidos e de raciocínio forte. O catálogo aprovado e os preços verificados ficam em `config/model_registry.json`.
-- Chats têm um limite de 60 segundos por chamada e builds 150 segundos por chamada, configuráveis com `MODEL_CHAT_TIMEOUT_SECONDS` e `MODEL_BUILD_TIMEOUT_SECONDS`. O cliente não repete automaticamente chamadas interativas: um timeout liberta a operação e explica que se pode tentar novamente com um modelo rápido nomeado.
+- Modelo padrão: `openai/gpt-6-luna` através do OpenRouter. O backend rejeita `openrouter/free`, modelos `:free`, entradas com preço zero e routers variáveis, mesmo quando pedidos diretamente pela API. O catálogo aprovado e os preços verificados ficam em `config/model_registry.json`.
+- Chats têm um limite de 60 segundos por chamada e builds 150 segundos por etapa, configuráveis com `MODEL_CHAT_TIMEOUT_SECONDS` e `MODEL_BUILD_TIMEOUT_SECONDS`. Respostas estruturadas inválidas não são repetidas indefinidamente: o pipeline usa o fallback validado. Um watchdog liberta o projeto quando uma operação deixa de mostrar progresso.
 - A pesquisa académica consulta arXiv, Crossref, OpenAlex e Semantic Scholar em paralelo, com um limite de 20 segundos por fonte, para impedir que uma fonte lenta bloqueie todo o agente.
 - Orçamento inicial da interface: **US$ 1 por build**, ajustável manualmente entre US$ 0,01 e US$ 1. O servidor rejeita valores acima desse teto. O valor escolhido fica no registo de custos daquele agente e abrange decisões JEV e reparações. Cada consulta com modelo e seleção JEV avulsa tem orçamento separado de US$ 1.
 - Custos desconhecidos bloqueiam chamadas seguintes. As reservas reduzem o risco de exceder o orçamento, mas não constituem um limite de cobrança imposto pelo fornecedor. Uma chamada já enviada pode reportar um custo superior ao reservado.

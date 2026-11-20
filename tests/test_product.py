@@ -72,6 +72,37 @@ def test_running_operation_conflict_explains_what_is_blocking_the_project(tmp_pa
     assert store.job(job)['progress'] == 'Waiting for the configured model'
 
 
+def test_build_watchdog_releases_a_stalled_project(tmp_path, monkeypatch):
+    import app.web as web
+
+    class ImmediateTimer:
+        daemon = False
+
+        def __init__(self, _seconds, callback):
+            self.callback = callback
+
+        def start(self):
+            self.callback()
+
+        def cancel(self):
+            pass
+
+    monkeypatch.setattr(web.threading, 'Timer', ImmediateTimer)
+    monkeypatch.setattr(web, 'run_build', lambda *args, **kwargs: {'status': 'passed'})
+    application = web.create_app(tmp_path)
+    store = application.state.store
+    project = store.create('Watchdog', 'Research question')['id']
+
+    with TestClient(application) as client:
+        client.headers['x-factory-token'] = client.get('/api/session').json()['token']
+        response = client.post(f'/api/projects/{project}/build', json={'mode': 'demo'})
+        job = store.job(response.json()['job_id'])
+
+    assert job['status'] == 'failed'
+    assert 'unlocked' in job['error']
+    assert store.start_job(project, 'chat')
+
+
 def test_terminal_job_and_project_can_be_deleted_with_their_files(tmp_path):
     application = create_app(tmp_path)
     store = application.state.store
@@ -105,16 +136,16 @@ def test_web_project_workflow(tmp_path):
     with TestClient(create_app(tmp_path)) as client:
         assert client.get('/').status_code == 200
         assert client.get('/api/health').json() == {
-            'status': 'ok', 'service': 'research-agent-factory', 'version': '0.1.0',
+            'status': 'ok', 'service': 'research-agent-factory', 'version': '0.1.2',
         }
         session = client.get('/api/session').json()
         catalogue = {item['model']: item for item in session['models']}
-        assert catalogue['openrouter/free']['tier'] == 'Free · variable speed'
+        assert 'openrouter/free' not in catalogue
         assert catalogue['openai/gpt-6-luna']['tier'] == 'Fast'
         assert catalogue['openai/gpt-6-sol']['tier'] == 'Strong'
-        assert catalogue['apodex/apodex-1.1-mini:free']['tier'] == 'Free · research'
+        assert 'apodex/apodex-1.1-mini:free' not in catalogue
         assert catalogue['openai/gpt-6.1-sol-pro']['tier'] == 'Maximum reasoning'
-        assert len(catalogue) >= 10
+        assert len(catalogue) >= 9
         assert all(float(item['max_call_usd']) <= 1 for item in catalogue.values())
         assert client.post('/api/projects', json={}).status_code == 403
         client.headers['x-factory-token'] = session['token']
@@ -125,6 +156,14 @@ def test_web_project_workflow(tmp_path):
         assert result.status_code == 201
         identifier = result.json()['id']
         base = '/api/projects/' + identifier
+        free_model = client.post(base + '/chat', json={
+            'query': 'Do not run', 'mode': 'live',
+            'model_provider': 'openrouter', 'model': 'openrouter/free',
+        })
+        assert free_model.status_code == 400
+        assert 'Apenas modelos pagos' in free_model.json()['detail']
+        assert not [job for job in client.get(base).json()['jobs']
+                    if job['status'] in {'queued', 'running'}]
         uploaded = client.post(base + '/documents', files={'file': ('notes.txt', b'Regression evidence supports comparisons')})
         assert uploaded.status_code == 200
         assert client.get(base + '/wiki').json()[0]['kind'] == 'source'

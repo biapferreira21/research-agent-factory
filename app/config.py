@@ -17,12 +17,12 @@ class Settings(BaseSettings):
     openai_model: str = "gpt-5.5"
 
     openrouter_api_key: str | None = None
-    openrouter_model: str = "openrouter/free"
+    openrouter_model: str = "openai/gpt-6-luna"
 
     workspace_root: str = "generated_agents"
     model_registry_path: str = "config/model_registry.json"
     mcp_registry_path: str = "config/mcp_registry.json"
-    allow_model_router: bool = True
+    allow_model_router: bool = False
     allowed_hosts: str = "127.0.0.1,localhost,testserver"
     build_budget_usd: Decimal = Field(default=Decimal("1.00"), ge=0, allow_inf_nan=False)
     model_call_reservation_usd: Decimal | None = Field(default=None, gt=0, allow_inf_nan=False)

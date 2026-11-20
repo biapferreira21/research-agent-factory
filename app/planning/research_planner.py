@@ -10,12 +10,12 @@ from app.retrieval.context import evidence_messages
 
 def create_question_formalizer():
     return create_agent(model=get_model(), tools=[], system_prompt=QUESTION_PROMPT,
-                        response_format=ToolStrategy(ResearchQuestionSpec))
+                        response_format=ToolStrategy(ResearchQuestionSpec, handle_errors=False))
 
 
 def create_research_planner():
     return create_agent(model=get_model(), tools=[], system_prompt=PROTOCOL_PROMPT,
-                        response_format=ToolStrategy(ResearchProtocol))
+                        response_format=ToolStrategy(ResearchProtocol, handle_errors=False))
 
 
 def formalize_research_question(request: str) -> ResearchQuestionSpec:

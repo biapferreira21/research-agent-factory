@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "research-agent-factory"
-version = "0.1.1"
+version = "0.1.2"
 description = "Local research agent factory with contracts, budgets and auditable validation"
 requires-python = ">=3.11"
 dependencies = [

@@ -4,7 +4,7 @@
     {
       "provider": "openrouter",
       "model": "openrouter/free",
-      "enabled": true,
+      "enabled": false,
       "is_router": true,
       "context_window": 200000,
       "max_output_tokens": 4096,
@@ -19,12 +19,12 @@
         "checked_on": "2026-11-20",
         "valid_for_days": 30
       },
-      "notes": "Router mantido por escolha do utilizador. Contexto, preços e capacidades conferidos no catálogo público OpenRouter. 4096 é um limite local de output, não o máximo anunciado pelo fornecedor. O modelo resolvido pode variar."
+      "notes": "Disabled by product policy: free and variable router endpoints are not permitted."
     },
     {
       "provider": "openrouter",
       "model": "apodex/apodex-1.1-mini:free",
-      "enabled": true,
+      "enabled": false,
       "is_router": false,
       "context_window": 200000,
       "max_output_tokens": 8192,
@@ -39,7 +39,7 @@
         "checked_on": "2026-11-20",
         "valid_for_days": 30
       },
-      "notes": "Named free reasoning model for research and forecasting. Unlike the free router, the selected model stays stable between calls."
+      "notes": "Disabled by product policy: free endpoints are not permitted."
     },
     {
       "provider": "openrouter",

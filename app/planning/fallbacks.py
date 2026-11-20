@@ -1,4 +1,4 @@
-"""Deterministic contracts used when a free router returns malformed structured output."""
+"""Deterministic contracts used when a model returns malformed structured output."""
 import re
 
 from app.config import get_settings
@@ -11,7 +11,8 @@ def is_response_validation_error(error: BaseException) -> bool:
     current: BaseException | None = error
     while current is not None:
         if type(current).__name__ in {"ResponseValidationError", "StructuredOutputValidationError",
-                                     "MultipleStructuredOutputsError"}:
+                                     "MultipleStructuredOutputsError", "GraphRecursionError",
+                                     "NodeTimeoutError"}:
             return True
         current = current.__cause__ or current.__context__
     return False

@@ -17,7 +17,7 @@ with AgentFactoryClient("http://127.0.0.1:8765") as factory:
     operation = factory.build_agent(
         project["id"],
         provider="openrouter",
-        model="openrouter/free",
+        model="openai/gpt-6-luna",
         budget_usd="1.00",
     )
     agent_build = factory.wait_job(operation["job_id"])

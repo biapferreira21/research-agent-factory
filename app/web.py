@@ -22,6 +22,7 @@ from app.registry.skills import SkillLibrary
 from app.project_runtime import run_build, select_project_skills, chat, agent_chat
 from app.research_intake import assess_research_brief, compile_research_brief
 from app.wiki import ProjectWiki
+from app.version import VERSION
 
 
 class ProjectInput(BaseModel):
@@ -123,8 +124,6 @@ def model_catalog():
     from app.registry.runtime import get_registry
     from app.registry.models import ModelRequirements
     labels = {
-        "openrouter/free": ("Free router", "Free · variable speed"),
-        "apodex/apodex-1.1-mini:free": ("Apodex 1.1 Mini", "Free · research"),
         "upstage/solar-mini4": ("Solar Mini 4", "Fast · low cost"),
         "cohere/command-a-plus": ("Command A+", "Balanced"),
         "openai/gpt-6-luna": ("GPT-6 Luna", "Fast"),
@@ -136,7 +135,7 @@ def model_catalog():
         "qwen/qwen3.8-max-prime": ("Qwen3.8 Max Prime", "Strong · fast"),
     }
     entries = get_registry().candidates(ModelRequirements(
-        tool_calling=True, structured_output=True, allow_router=True,
+        tool_calling=True, structured_output=True, allow_router=get_settings().allow_model_router,
         max_reservation_usd=Decimal("1.00"),
     ))
     return [{
@@ -157,7 +156,11 @@ def validate_model_selection(provider, model, *, tool_calling=False, structured_
     if bool(provider) != bool(model):
         raise ValueError("Model provider and model must be selected together")
     from app.registry.runtime import require_model
-    entry = require_model(provider, model, tool_calling=tool_calling, structured_output=structured_output)
+    from app.telemetry.costs import BudgetBlocked
+    try:
+        entry = require_model(provider, model, tool_calling=tool_calling, structured_output=structured_output)
+    except BudgetBlocked as error:
+        raise ValueError(str(error)) from error
     if budget is not None and entry.reservation() > budget:
         raise ValueError("The selected model's maximum call reservation exceeds this operation's budget")
 
@@ -169,11 +172,11 @@ def operation_failure_message(error: Exception, kind: str) -> str:
     lowered = (name + " " + detail).casefold()
     if "timeout" in lowered or "timed out" in lowered:
         settings = get_settings()
-        seconds = (settings.model_chat_timeout_seconds
+        seconds = (int(getattr(settings, "model_chat_timeout_seconds", 60))
                    if kind in {"chat", "agent_chat"}
-                   else settings.model_build_timeout_seconds)
+                   else int(getattr(settings, "model_build_timeout_seconds", 150)))
         return (f"Model timeout after {seconds}s. The provider returned no reply. "
-                "Retry with a named Fast model instead of the variable free router.")
+                "Retry with another approved named model.")
     if "rate" in lowered and "limit" in lowered:
         return "Provider rate limit reached. Wait briefly or select another named model."
     if "credit" in lowered or "balance" in lowered:
@@ -199,7 +202,7 @@ def create_app(data_root: Path | None = None):
         store.recover_jobs()
         yield
 
-    app = FastAPI(title="Research Atelier", version="0.1.0", lifespan=lifespan)
+    app = FastAPI(title="Research Atelier", version=VERSION, lifespan=lifespan)
     app.state.store = store
     app.state.integrations = integrations
     app.state.obsidian = obsidian
@@ -234,7 +237,7 @@ def create_app(data_root: Path | None = None):
 
     @app.get("/api/health")
     def health():
-        return {"status": "ok", "service": "research-agent-factory", "version": "0.1.0"}
+        return {"status": "ok", "service": "research-agent-factory", "version": VERSION}
 
     @app.get("/api/session")
     def session():
@@ -243,7 +246,7 @@ def create_app(data_root: Path | None = None):
         models = model_catalog()
         for item in models:
             item["configured"] = providers.get(item["provider"], {}).get("configured", False)
-        return {"token": token, "version": "0.1.0", "budget_usd": "1.00",
+        return {"token": token, "version": VERSION, "budget_usd": "1.00",
                 "provider": settings.model_provider,
                 "model": settings.openrouter_model if settings.model_provider == "openrouter" else settings.openai_model,
                 "default_build_budget_usd": "1.00", "max_build_budget_usd": "1.00",
@@ -423,22 +426,38 @@ def create_app(data_root: Path | None = None):
         def execute():
             store.update_job(identifier, "running", progress="Preparing operation")
             watchdog = None
-            if kind in {"chat", "agent_chat"}:
-                timeout_seconds = get_settings().model_chat_timeout_seconds
-                watchdog = threading.Timer(
-                    timeout_seconds + 10,
-                    lambda: store.update_job_if_active(
-                        identifier,
-                        "failed",
-                        error=(f"Model timeout after {timeout_seconds}s. The provider returned no reply. "
-                               "Retry with a named Fast model instead of the variable free router."),
-                        progress="Timed out; the project is ready for another operation",
-                    ),
+            watchdog_lock = threading.Lock()
+            settings = get_settings()
+            stall_seconds = (
+                int(getattr(settings, "model_chat_timeout_seconds", 60)) + 10
+                if kind in {"chat", "agent_chat"}
+                else int(getattr(settings, "model_build_timeout_seconds", 150)) + 30
+            )
+
+            def expire_operation():
+                failure = (
+                    f"Operation timed out after {stall_seconds}s without progress. "
+                    "The project is unlocked; retry with another approved named model."
                 )
-                watchdog.daemon = True
-                watchdog.start()
+                store.update_job_if_active(
+                    identifier, "failed", error=failure,
+                    progress="Timed out; the project is ready for another operation",
+                )
+
+            def arm_watchdog():
+                nonlocal watchdog
+                with watchdog_lock:
+                    if watchdog is not None:
+                        watchdog.cancel()
+                    watchdog = threading.Timer(stall_seconds, expire_operation)
+                    watchdog.daemon = True
+                    watchdog.start()
+
+            arm_watchdog()
+
             def report_progress(message):
-                store.update_job_if_active(identifier, "running", progress=str(message)[:300])
+                if store.update_job_if_active(identifier, "running", progress=str(message)[:300]):
+                    arm_watchdog()
             try:
                 result = operation(report_progress, identifier)
                 status = result.get("status", "passed") if isinstance(result, dict) else "passed"
@@ -455,8 +474,9 @@ def create_app(data_root: Path | None = None):
                 failure = operation_failure_message(error, kind)
                 store.update_job_if_active(identifier, "failed", error=failure, progress=failure)
             finally:
-                if watchdog is not None:
-                    watchdog.cancel()
+                with watchdog_lock:
+                    if watchdog is not None:
+                        watchdog.cancel()
         tasks.add_task(execute)
         return {"job_id": identifier, "status": "queued"}
 
