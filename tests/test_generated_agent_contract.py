@@ -1,30 +1,17 @@
-from pathlib import Path
+from inspect import getsource
+
+from app.builder import agent as builder_agent
 
 
-def test_generated_agent_uses_langchain():
-    agent_file = Path(
-        "generated_agents/hello_agent/agent.py"
-    )
+def test_builder_agent_uses_langchain():
+    """The factory's live builder must remain backed by LangChain."""
+    source = getsource(builder_agent)
 
-    content = agent_file.read_text(
-        encoding="utf-8"
-    )
-
-    assert "langchain" in content.lower()
+    assert "langchain" in source.lower()
 
 
-def test_generated_agent_uses_configured_model():
-    agent_file = Path(
-        "generated_agents/hello_agent/agent.py"
-    )
+def test_builder_agent_uses_configured_model():
+    """Model selection must flow through the factory's configured router."""
+    source = getsource(builder_agent)
 
-    content = agent_file.read_text(
-        encoding="utf-8"
-    )
-
-    assert (
-        "get_model" in content
-        or "ChatOpenAI" in content
-    )
-
-    
+    assert "get_model" in source
