@@ -18,9 +18,13 @@ jobs:
           cache: pip
       - run: python -m pip install build
       - run: python -m build
-      - run: python scripts/build_friend_kit.py --wheel dist/*.whl --output dist/research-agent-factory-kit-0.1.0.zip
-      - run: python scripts/audit_release.py --wheel dist/*.whl --bundle dist/research-agent-factory-kit-0.1.0.zip
+      - name: Read package version
+        run: |
+          VERSION=$(python -c "import tomllib; print(tomllib.load(open('pyproject.toml', 'rb'))['project']['version'])")
+          echo "KIT_PATH=dist/research-agent-factory-kit-${VERSION}.zip" >> "$GITHUB_ENV"
+      - run: python scripts/build_friend_kit.py --wheel dist/*.whl --output "$KIT_PATH"
+      - run: python scripts/audit_release.py --wheel dist/*.whl --bundle "$KIT_PATH"
       - name: Publish GitHub release
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh release create "$GITHUB_REF_NAME" dist/*.whl dist/research-agent-factory-kit-0.1.0.zip --generate-notes
+        run: gh release create "$GITHUB_REF_NAME" dist/*.whl "$KIT_PATH" --generate-notes
