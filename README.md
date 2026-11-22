@@ -18,7 +18,7 @@ Abre **http://127.0.0.1:8765**. Para instalar noutro ambiente, usa Python 3.12 o
 
 ## Kit para partilha
 
-O ficheiro `dist/research-agent-factory-kit-0.1.2.zip` pode ser enviado diretamente. Depois de extrair, um utilizador Windows executa **Install Agent Factory.cmd** uma vez e **Start Agent Factory.cmd** para abrir o harness. Cada pessoa liga as suas próprias chaves no painel **I/O**. Ao publicar uma tag Git `v*`, o workflow `publish-kit` cria automaticamente uma GitHub Release com o ZIP e o wheel para download.
+O ficheiro `dist/research-agent-factory-kit-0.1.3.zip` pode ser enviado diretamente. Depois de extrair, um utilizador Windows executa **Install Agent Factory.cmd** uma vez e **Start Agent Factory.cmd** para abrir o harness. Cada pessoa liga as suas próprias chaves no painel **I/O**. Ao publicar uma tag Git `v*`, o workflow `publish-kit` cria automaticamente uma GitHub Release com o ZIP e o wheel para download.
 
 ## Percurso na interface
 

@@ -5,7 +5,7 @@ const safe = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&am
 const state = {token:'',session:{},integrations:{providers:{},obsidian:{}},harness:{},projects:[],skills:[],project:null,view:'home',tab:'overview',agent:null};
 const date = value => value ? new Date(value).toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric'}) : '—';
 const money = value => '$' + Number(value ?? 0).toFixed(2);
-const statuses = {passed:'READY',failed:'FAILED',blocked:'BLOCKED',running:'RUNNING',queued:'QUEUED',interrupted:'INTERRUPTED'};
+const statuses = {passed:'READY',failed:'FAILED',blocked:'INPUT',running:'RUNNING',queued:'QUEUED',interrupted:'INTERRUPTED'};
 
 function modelKey(provider,model) { return `${provider || ''}|${model || ''}`; }
 
@@ -191,7 +191,9 @@ function sourcesView(project) {
 }
 
 function agentsView(project) {
-  const builds = project.jobs.filter(job=>job.kind==='build');
+  // Failed/blocked attempts belong to the audit log, not the agent register.
+  const buildAttempts = project.jobs.filter(job=>job.kind==='build');
+  const builds = buildAttempts.filter(job=>['passed','queued','running'].includes(job.status));
   const ready = state.session.has_key;
   const briefReady = Boolean(project.research_status?.ready);
   const activeOperation = project.jobs.find(job=>['queued','running'].includes(job.status));
@@ -201,9 +203,13 @@ function agentsView(project) {
   const latestOperation=project.jobs[0];
   const failedOperation=['failed','interrupted'].includes(latestOperation?.status)&&
     Date.now()-new Date(latestOperation.created).getTime()<86400000?latestOperation:null;
+  const clarificationBuild=buildAttempts.find(job=>job.status==='blocked'&&(job.result?.errors||[]).some(error=>/^Falta esclarecer (a pergunta|o protocolo):/.test(error)));
+  const clarificationText=clarificationBuild?(clarificationBuild.result.errors.find(error=>/^Falta esclarecer (a pergunta|o protocolo):/.test(error))||'').replace(/^Falta esclarecer (a pergunta|o protocolo):\s*/, 'INPUT_REQUIRED: '):'';
+  const clarificationAnswered=clarificationBuild&&(project.messages||[]).some(message=>message.role==='user'&&new Date(message.created)>new Date(clarificationBuild.created));
+  const clarificationNotice=clarificationText&&!clarificationAnswered?`<article class="terminal-line from-agent intake-required"><span class="terminal-prompt">factory@raf:~#</span><pre>${safe(clarificationText)}</pre></article>`:'';
   const failureNotice=(failedOperation?`<div class="terminal-alert operation-failed">! ${safe(failedOperation.kind.toUpperCase())}::${safe(failedOperation.status.toUpperCase())}</div>`:'')+factoryResponseDiagnostics(project);
   const agentRows=builds.map(job=>`<article class="agent-list-row"><div class="agent-list-mark">∑</div><div class="agent-list-copy"><strong>${safe(job.result?.agent_name || (job.status==='failed'?'FAILED_BUILD':'RESEARCH_AGENT'))}</strong><small>${safe(statuses[job.status]||job.status)} // ${date(job.created)}</small></div>${job.result?.build_id?`<button class="text-button" data-agent="${job.id}" ${job.status==='queued'||job.status==='running'?'disabled':''}>↗</button>`:''}${!['queued','running'].includes(job.status)?`<button class="icon-delete" data-delete-job="${job.id}" aria-label="Delete ${safe(job.result?.agent_name||'build')}">×</button>`:''}</article>`).join('');
-  const messages=project.messages.map(message=>`<article class="terminal-line ${message.role==='user'?'from-user':'from-agent'}"><span class="terminal-prompt">${message.role==='user'?'you@research:~$':'factory@raf:~#'}</span><pre>${safe(message.content)}</pre></article>`).join('');
+  const messages=project.messages.map(message=>`<article class="terminal-line ${message.role==='user'?'from-user':'from-agent'}"><span class="terminal-prompt">${message.role==='user'?'you@research:~$':'factory@raf:~#'}</span><pre>${safe(message.content)}</pre></article>`).join('')+clarificationNotice;
   const evaluations=`<details class="secondary-workflows"><summary>EVAL</summary><section class="card"><form id="evaluation-form"><div class="form-grid"><label>BUILD<select name="job_id" required>${builds.filter(job=>job.status==='passed').map(job=>`<option value="${job.id}">${safe(job.result?.build_id || job.id)}</option>`).join('')}</select></label><label>JSON<input type="file" name="file" accept=".json" required></label></div><button class="secondary-button" ${builds.some(job=>job.status==='passed')?'':'disabled'}>RUN</button></form><button class="text-button" data-action="evaluation-history">LOG</button><pre id="evaluation-output" class="json-view" hidden></pre></section></details>`;
   const factoryModelControl=modelControl(state.session.provider,state.session.model,'MODEL');
   const buildModelControl=modelControl(state.session.provider,state.session.model,'MODEL');

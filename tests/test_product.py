@@ -11,6 +11,7 @@ from app.projects import ProjectStore
 from app.retrieval.bm25 import rank
 from app.runtime_tools import call_local_mcp, project_tools
 from app.web import create_app
+from app.web import build_clarification
 from app.wiki import ProjectWiki
 
 
@@ -56,6 +57,14 @@ def test_job_lock_and_recovery(tmp_path):
     store.recover_jobs()
     assert store.job(job)['status'] == 'interrupted'
     assert store.start_job(identifier, 'chat') != job
+
+
+def test_scientific_build_block_becomes_factory_clarification():
+    assert build_clarification({
+        'status': 'blocked',
+        'errors': ['Falta esclarecer a pergunta: Which private dataset is available?'],
+    }) == 'INPUT_REQUIRED: Which private dataset is available?'
+    assert build_clarification({'status': 'blocked', 'errors': ['Budget exhausted']}) is None
 
 
 def test_running_operation_conflict_explains_what_is_blocking_the_project(tmp_path):
@@ -136,7 +145,7 @@ def test_web_project_workflow(tmp_path):
     with TestClient(create_app(tmp_path)) as client:
         assert client.get('/').status_code == 200
         assert client.get('/api/health').json() == {
-            'status': 'ok', 'service': 'research-agent-factory', 'version': '0.1.2',
+            'status': 'ok', 'service': 'research-agent-factory', 'version': '0.1.3',
         }
         session = client.get('/api/session').json()
         catalogue = {item['model']: item for item in session['models']}

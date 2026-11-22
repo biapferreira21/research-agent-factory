@@ -16,11 +16,11 @@ _USER_ONLY_TERMS = (
     "legal approval", "ethics approval", "required file", "upload", "file path",
     "what topic", "which topic", "which population", "what population",
     "which outcome", "what outcome", "which comparison", "what comparison",
-    "which domain", "what domain", "time period", "geographic scope",
+    "which domain", "what domain",
     "dataset privado", "dados privados", "dados proprietários", "credenciais",
     "chave de api", "consentimento", "aprovação ética", "ficheiro obrigatório",
     "carregar ficheiro", "qual população", "qual resultado", "qual comparação",
-    "qual domínio", "período temporal", "âmbito geográfico",
+    "qual domínio",
 )
 
 
@@ -37,8 +37,11 @@ def resolve_factory_design_questions(question: ResearchQuestionSpec) -> list[str
         lowered = " ".join(item.casefold().split())
         requires_user = any(term in lowered for term in _USER_ONLY_TERMS)
         # A validated live brief already supplies a researchable topic and
-        # relationship. Unless the question asks for unavailable user data or
-        # scope, the factory owns the remaining methodological choice.
+        # relationship. The factory owns defaults such as a global geographic
+        # scope or a bounded review period and records them as assumptions.
+        # Only information that the factory cannot safely obtain or choose
+        # (private data, credentials, approvals, or an undefined core subject)
+        # remains a user-blocking question.
         (unresolved if requires_user else delegated).append(item)
     if delegated:
         existing = set(question.assumptions)

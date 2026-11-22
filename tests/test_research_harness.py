@@ -98,6 +98,22 @@ def test_live_factory_still_blocks_information_only_the_user_can_supply(tmp_path
     assert "private dataset" in result.errors[0]
 
 
+def test_live_factory_owns_default_geographic_and_time_scope(tmp_path):
+    question = create_example_protocol().question
+    question.open_questions = [
+        "Should geographic scope be global, or should particular jurisdictions receive priority?",
+        "Which time period should bound the literature review?",
+    ]
+
+    result = harness(tmp_path, question_formalizer=lambda _: question,
+                     allow_semantic_fallbacks=True).build_research("Review a public research field")
+
+    assert result.status == "passed", result.errors
+    restored = json.loads((Path(result.workspace) / "research_question.json").read_text(encoding="utf-8"))
+    assert restored["open_questions"] == []
+    assert len([item for item in restored["assumptions"] if item.startswith("Factory design assumption")]) == 2
+
+
 @pytest.mark.parametrize("changed", ["question", "constraints", "open_questions"])
 def test_bad_protocol_never_reaches_architect(tmp_path, changed):
     def planner(question):

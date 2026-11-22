@@ -25,6 +25,19 @@ from app.wiki import ProjectWiki
 from app.version import VERSION
 
 
+def build_clarification(result: dict | None) -> str | None:
+    """Return the concise intake question from a scientifically blocked build."""
+    if not isinstance(result, dict) or result.get("status") != "blocked":
+        return None
+    for raw in result.get("errors") or []:
+        message = str(raw).strip()
+        for prefix in ("Falta esclarecer a pergunta:", "Falta esclarecer o protocolo:"):
+            if message.startswith(prefix):
+                question = message.removeprefix(prefix).strip()
+                return "INPUT_REQUIRED: " + question if question else None
+    return None
+
+
 class ProjectInput(BaseModel):
     model_config = ConfigDict(extra="forbid")
     name: str = Field(min_length=1, max_length=150)
@@ -463,6 +476,12 @@ def create_app(data_root: Path | None = None):
                 status = result.get("status", "passed") if isinstance(result, dict) else "passed"
                 completed = store.update_job_if_active(identifier, status, result=result)
                 if completed and kind == "build":
+                    clarification = build_clarification(result)
+                    if clarification:
+                        # A scientific intake gate is a conversation turn, not a
+                        # broken agent. Surface it in the factory terminal so the
+                        # next user answer becomes part of the compiled brief.
+                        store.message(project_id, "assistant", clarification)
                     ProjectWiki(store.directory(project_id)).add("Agent build " + status,
                         "Job: `" + identifier + "`\n\nBuild: `" + str(result.get("build_id", "unknown")) +
                         "`\n\nStatus: **" + status + "**", kind="build", agent_id=identifier)
